@@ -178,7 +178,7 @@ function trendingReplace(pid) {
 
 // Categories
 function catchCategs(element) {
-  let keyword = element.children[1].innerText;
+  let keyword = element.children[0].children[0].children[1].innerText;
   let modKey = String(keyword).replace(" ", "").replace("-", "").toLowerCase();
 
   localStorage.setItem("toSearchNow", modKey);
