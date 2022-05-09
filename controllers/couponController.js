@@ -21,10 +21,10 @@ const getDetails = async (req, res, next) => {
         const coupon_details = {}
         const data_coupon = await db.collection("coupons").doc(req.params.coupon).get()
         const user_data_coupon = await db.collection("users").doc(req.params.phone).get();
-        const coupon_used = user_data_coupon.data()["coupons_used"];
+        const coupon_used = user_data_coupon.data();
         console.log(coupon_used);
         console.log(data_coupon);
-        if (coupon_used.exists) {
+        if (Object.keys(coupon_used).includes("coupons_used")) {
             if (coupon_used.includes(req.params.coupon)) {
                 res.send(JSON.stringify({ "success": false, "error": "Coupon Already Used" }))
             } else {
@@ -46,7 +46,7 @@ const getDetails = async (req, res, next) => {
                                         coupon_details["success"] = true;
                                         coupon_details["discount"] = data_coupon.data()["discount"];
                                         coupon_details["discount_type"] = data_coupon.data()["discount_type"];
-                                        coupon_details["free_delivery"] = data_coupon.data()["free_delivery"];
+                                        coupon_details["free_delivery"] = false;
                                         // data_coupon.data()["free_delivery"];
                                         coupon_details["offers"] = data_coupon.data()["offers"];
                                         res.send(coupon_details);
@@ -61,7 +61,7 @@ const getDetails = async (req, res, next) => {
                                     coupon_details["success"] = true;
                                     coupon_details["discount"] = data_coupon.data()["discount"];
                                     coupon_details["discount_type"] = data_coupon.data()["discount_type"];
-                                    coupon_details["free_delivery"] = data_coupon.data()["free_delivery"];
+                                    coupon_details["free_delivery"] = false;
                                     // data_coupon.data()["free_delivery"];
                                     coupon_details["offers"] = data_coupon.data()["offers"];
                                     res.send(coupon_details);
@@ -100,7 +100,7 @@ const getDetails = async (req, res, next) => {
                                     coupon_details["success"] = true;
                                     coupon_details["discount"] = data_coupon.data()["discount"];
                                     coupon_details["discount_type"] = data_coupon.data()["discount_type"];
-                                    coupon_details["free_delivery"] = data_coupon.data()["free_delivery"];
+                                    coupon_details["free_delivery"] = false;
                                     // data_coupon.data()["free_delivery"];
                                     coupon_details["offers"] = data_coupon.data()["offers"];
                                     res.send(coupon_details);
