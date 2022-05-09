@@ -46,7 +46,7 @@ const getDetails = async (req, res, next) => {
                                         coupon_details["success"] = true;
                                         coupon_details["discount"] = data_coupon.data()["discount"];
                                         coupon_details["discount_type"] = data_coupon.data()["discount_type"];
-                                        coupon_details["free_delivery"] = false;
+                                        coupon_details["free_delivery"] = data_coupon.data()["free_delivery"];
                                         // data_coupon.data()["free_delivery"];
                                         coupon_details["offers"] = data_coupon.data()["offers"];
                                         res.send(coupon_details);
@@ -61,7 +61,7 @@ const getDetails = async (req, res, next) => {
                                     coupon_details["success"] = true;
                                     coupon_details["discount"] = data_coupon.data()["discount"];
                                     coupon_details["discount_type"] = data_coupon.data()["discount_type"];
-                                    coupon_details["free_delivery"] = false;
+                                    coupon_details["free_delivery"] = data_coupon.data()["free_delivery"];
                                     // data_coupon.data()["free_delivery"];
                                     coupon_details["offers"] = data_coupon.data()["offers"];
                                     res.send(coupon_details);
@@ -100,7 +100,7 @@ const getDetails = async (req, res, next) => {
                                     coupon_details["success"] = true;
                                     coupon_details["discount"] = data_coupon.data()["discount"];
                                     coupon_details["discount_type"] = data_coupon.data()["discount_type"];
-                                    coupon_details["free_delivery"] = false;
+                                    coupon_details["free_delivery"] = data_coupon.data()["free_delivery"];
                                     // data_coupon.data()["free_delivery"];
                                     coupon_details["offers"] = data_coupon.data()["offers"];
                                     res.send(coupon_details);
