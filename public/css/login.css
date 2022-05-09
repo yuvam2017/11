@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.login-container {
+  display: block;
+}
+
+.signup-container {
+  display: none;
+}
+
+.login-box {
+  margin-bottom: 8%;
+  border-radius: 1rem;
+  background-color: white;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.submit-btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+}
+
+#loginPasswordParent {
+  display: none;
+}
+
+#errorMessage {
+  color: red;
+  display: none;
+}
+
+.parent-login-box {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verificationCode {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.794));
+}
+
+.verify {
+  width: 40%;
+  height: 50%;
+  border-radius: 0.5rem;
+  background-color: white;
+  /* position: fixed;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15%;
+}
+.close-verify {
+  display: none;
+  width: 5rem;
+  height: 5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 10;
+  position: fixed;
+  top: 20%;
+  left: 80%;
+}
+.close-verify:hover {
+  cursor: hand;
+}
+
+.verify p {
+  font-size: 1.35rem;
+  font-weight: 550;
+  font-family: "Poppins", sans-serif;
+}
+
+.otp-login {
+    margin: 1.2rem;
+    height: 3.2rem;
+    border: 0;
+    border-bottom: 0.1rem solid #ff1816;
+    width: 5.5rem;
+    outline: none;
+    font-size: 1.35rem;
+    /* padding-inline-start: 0.5rem; */
+    padding-inline: 0.5rem;
+}
+
+.prompt {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.signUpPasswordElement {
+  position: relative;
+}
+#loginPasswordParent {
+  position: relative;
+}
+
+#loginShowPasswordBtn {
+  position: absolute;
+  bottom: 0%;
+  top: 20%;
+  right: 3%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signUpShowPasswordBtn {
+  display: none;
+  position: absolute;
+  bottom: 0%;
+  top: 15%;
+  right: 3%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.already {
+  margin-top: 2rem;
+}
+
+/*For mobile phones*/
+@media only screen and (max-width: 620px) {
+  .verify {
+    width: 90%;
+    height: 50%;
+    margin-top: 50%;
+  }
+  .parent-login-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: unset;
+  }
+  .bg_img {
+    display: none;
+  }
+}

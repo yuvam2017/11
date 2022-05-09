@@ -1,0 +1,639 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.product-image-gallery {
+  width: 33%;
+  height: 31rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.main-image {
+  object-fit: cover;
+}
+
+.main-image > img {
+  width: 20rem;
+  max-width: 38rem;
+  /*min-height: 32rem;*/
+  height: 20remrem;
+  object-fit: contain;
+  object-position: 50% 50%;
+  margin-left: 1rem;
+}
+
+.product-image-clips {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  height: 31rem;
+}
+
+.product-image-clips > img:hover {
+  cursor: zoom-in;
+}
+
+.product-image-clips > img {
+  width: 75%;
+  min-width: 2.5rem;
+  object-fit: contain;
+  height: 6rem;
+}
+
+.product-description {
+  width: 40%;
+}
+
+#productHeading {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#productPrice {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.55rem;
+  font-weight: bold;
+}
+
+.productRealPrice {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 550;
+  text-decoration: line-through;
+}
+
+.stars {
+  color: #ff7b00;
+  font-size: 1.2rem;
+}
+
+.instock {
+  color: green;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.free-delievery-charges {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 650;
+  color: #11ad74;
+}
+.size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.size > p {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-right: 0.5rem;
+}
+#productSize {
+  font-size: 1rem;
+  width: 50%;
+}
+
+/*SnackBar Starts here*/
+/*.snackbar {
+  width: 10rem;
+  height: 5rem;
+  border-radius: 2rem;
+}
+.snackbar-text {
+
+}
+*/
+
+/* ################################# */
+
+.color {
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.color > p {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.color-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.circle {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background-color: #00a164;
+}
+
+.circle:hover {
+  cursor: hand;
+}
+
+.color-red {
+  background-color: red;
+  border: 2px solid rgb(124, 0, 0);
+}
+
+.color-green {
+  background-color: green;
+  border: 2px solid rgb(0, 63, 0);
+}
+
+.color-blue {
+  background-color: blue;
+  border: 2px solid #000069;
+}
+
+.description {
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* Pincode */
+.heading-pincode {
+  font-weight: 550;
+  font-size: 1.1rem;
+}
+.heading-pincode i {
+  font-size: 1.4rem;
+}
+
+.input-pincode {
+  width: 90%;
+  margin-left: 0.8rem;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  border-radius: 0.2rem;
+  background-color: #fff;
+}
+
+.input-pincode > input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #fff;
+}
+.input-pincode > input:focus,
+.input-pincode > input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.btnpincode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 550;
+  color: #373636;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+input-pincode::-webkit-outer-spin-button,
+input-pincode::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.affirmativeDelhi {
+  display: none;
+  margin-top: 0.5rem;
+  font-weight: bolder;
+  font-size: 0.85rem;
+  color: #2b8a67;
+}
+
+.negativeDelhi {
+  display: none;
+  margin-top: 0.5rem;
+  font-weight: bolder;
+  font-size: 0.85rem;
+  color: #ff4800;
+}
+
+.tagline_pincode {
+  font-size: 0.85rem;
+}
+
+.additional-benefits {
+  margin-top: 2rem;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  /* padding-left: 2rem; */
+}
+
+.heading-additional-benefits {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.style-none {
+  list-style-type: none;
+}
+
+/*########## Color Variant #########*/
+.color-variant-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.color-variant {
+  /* width:6rem;
+  height:6rem;  */
+  padding: 0.2rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #5a1f1f;
+}
+
+.color-variant:hover {
+  cursor: hand;
+}
+
+.color-variant img {
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 6rem;
+  object-fit: fill;
+}
+
+/*################################## */
+
+.catelog-additional-benefits {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.catelog-additional-benefits > ul > li {
+  font-weight: 1.5rem;
+}
+
+.buyButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.2px solid #616161;
+  border-radius: 10px;
+  width: 25%;
+  height: 20rem;
+  /*font-size: 1.2rem;*/
+}
+
+.buyButtons > .quantity > .qty {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.buyButtons > .quantity {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+#quantityProduct {
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  width: 3.5rem;
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+#headingBuyButtons {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.btn-address-modal {
+  font-size: 1.2rem;
+  font-family: "Poppins", serif;
+}
+
+.addtocartandbuy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-addToCart {
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 13rem;
+}
+
+.btn-buy {
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 13rem;
+}
+
+#btnAddToFavourite {
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 13rem;
+}
+
+.btn:active {
+  outline: none;
+  box-shadow: 0;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0;
+}
+
+.review-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.star-box-rating {
+  width: 50%;
+}
+
+.big-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading-start {
+  font-size: 4rem;
+}
+
+#star-box-mainStar {
+  font-size: 1.85rem;
+}
+
+.counter-rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.46rem;
+}
+.counter-rating-container > i {
+  font-size: 1.5rem;
+}
+
+#counterRating {
+  margin-left: 1rem;
+}
+
+.star-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.star-box-name {
+  margin-right: 0.65rem;
+  width: 10%;
+}
+
+.star-box > .progress {
+  width: 90%;
+}
+
+.star-box > i {
+  color: #ff7b00;
+  background-color: #ff7b00;
+}
+
+.user-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.user-rating-persons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.upper-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  background-color: #14855b;
+  border-radius: 1rem;
+  color: white;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid grey;
+}
+.star-given {
+  font-size: 2rem;
+}
+.date-of-rating {
+  font-size: 1.2rem;
+}
+
+.lower-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  width: 70%;
+  flex-direction: column;
+}
+
+.heading-user-name {
+  font-size: 1.8rem;
+  font-weight: 990;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2rem;
+}
+
+.user-review {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/*###################################*/
+
+@media (max-width: 998px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/*For mobile phones*/
+@media only screen and (max-width: 620px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .product-image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .product-image-gallery > .main-image {
+    width: 100%;
+  }
+  .main-image > img {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    height: 100%;
+  }
+  .product-image-clips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+  }
+
+  .product-image-clips > img {
+    width: 22%;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .product-description {
+    width: 100%;
+  }
+
+  .buyButtons {
+    padding-top: 2rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .buyButtons > .quantity > .qty {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  #quantityProduct {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  #headingBuyButtons {
+    font-size: 1.3rem;
+  }
+
+  .btn-address-modal {
+    font-size: 1.2rem;
+  }
+
+  .addtocartandbuy {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .addtocartandbuy > button {
+    width: 19rem;
+    height: 3.5rem;
+    font-size: medium;
+  }
+
+  #btnAddToFavourite {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    width: 13rem;
+    height: 3rem;
+  }
+
+  .user-rating-persons {
+    padding: 0;
+  }
+  .star-given {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  .date-of-rating {
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+}

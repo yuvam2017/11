@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Montserrat:wght@300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* font-family: 'Kiwi Maru', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ##### 404 ####### */
+.error404 {
+  display : none;
+  justify-content : center;
+  align-items : center;
+  flex-direction: column;
+}
+.error404 img {
+  width: 30%;
+  /* height: auto; */
+}
+.text404 {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 550;
+  margin-bottom: 5rem;
+  
+}
+/* ################# */
+
+
+.container-gallery-product {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  flex-direction:row;
+  flex-wrap: wrap;
+
+}
+.gallery-product {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  flex-direction:column;
+  width: 12rem;
+  margin-right: 1rem;
+  margin-left:  1rem;
+  margin-bottom : 1rem;
+  height: 30rem;
+}
+
+#galleryImage {
+  width: 11.5rem;
+  height: 15.33rem;
+  object-fit: cover;
+}
+/* .gallery > a > img {
+  
+} */
+
+.gallery-product:hover {
+  transition-delay: 0.09s;
+  cursor: hand;
+  background-color: #022719;
+  color: rgb(255, 255, 255);
+}
+
+.striked-product-price-gallery{
+  font-size: 1rem;
+  font-weight: 550;
+  font-family : 'Kiwi Maru',serif;
+  text-decoration: line-through;
+}
+
+.heading-product-gallery {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  margin: auto;
+  font-weight: 450;
+  font-size: 1.2rem;  
+}
+.price-product-gallery {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  flex-direction: column;
+}
+#realPrice {
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+.decideShipingOrFree {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  flex-direction: row;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#realPrice {
+  font-size: 1.5rem;
+}
+
+.green-dot 
+{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: green;
+  color:green;
+}
+
+
+.grid-view-product {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  margin-bottom: 5rem;
+}
+
+.grid-view-product h3 {
+  margin-top: 1rem;
+  font-size: 1.32rem;
+  font-weight: 550;
+  font-family: "Kiwi Maru", serif;
+}
+
+.grid-view-product .container-gallery-product {
+  display: flex;
+  width: 100%;
+}
+

@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-check-label-payment {
+  font-size: 1.1rem;
+}
+
+.address-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.address {
+  margin-top: 2rem;
+  width: 20rem;
+  max-width: 20rem;
+  /* border: 0.2px solid black;   */
+}
+
+.add-address {
+  margin-top: 2rem;
+}
+
+.address-catelogs {
+  font-size: 0.95rem;
+  line-height: 0.5rem;
+}
+
+.addr {
+  line-height: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.btn-delivery-selection {
+  background-color: #ff6600;
+  color: white;
+}
+
+.btn-grey {
+  background: linear-gradient(
+    rgba(238, 238, 238, 0.904),
+    rgba(151, 151, 151, 0.822)
+  );
+  /* color: black; */
+}
+
+.modal-new-address {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+}
+
+.modal-add-new-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 72%;
+  height: 98%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.close-modal-add-new-address {
+  position: fixed;
+  top: 1%;
+  left: 90%;
+  color: white;
+  z-index: 1;
+}
+
+.close-modal-add-new-address button i {
+  color: white;
+  font-size: 2rem;
+}
+
+.add-new-address-subumit-btn {
+  width: 25%;
+}
+
+.error_pincode_status {
+  margin-top: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+/* modal when the code is not available in your area */
+.alert-pane {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  z-index: 1;
+}
+
+.payment-banner img {
+  width: 15rem;
+}
+
+.alert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 35%;
+  background-color: white;
+  border-radius: 0.7rem;
+}
+
+.message-alert {
+  line-height: 3rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 98%;
+  height: 70%;
+  flex-wrap: wrap;
+  color: #000;
+}
+
+.button-alert {
+  width: 95%;
+  height: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.button-alert button {
+  margin-left: 2rem;
+  width: 20%;
+}
+
+.button-alert button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.button-alert .cancel-online {
+  background-color: #e5e5e5;
+}
+/*Modal All Charges*/
+.modal-charges {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.modal-charges-child {
+  padding: 1rem;
+  flex-direction: row;
+  background-color: #fff;
+  width: 40rem;
+  height: 29rem;
+}
+
+.modal-body {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.list-none li {
+  /*margin-bottom: 2rem;*/
+  /*font-weight: ;*/
+  font-size: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.modal-buttons button {
+  margin-left: 2rem;
+}
+
+/* Coupons */
+.coupon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+
+.coupon input {
+  width: 55%;
+  padding-left: 1.3rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: 1px solid #ff1816;
+  /* border-bottom: 1px solid #ff1816; */
+  height: 3rem;
+  margin-left: 2rem;
+}
+
+.coupon button {
+  border-radius: 0;
+  color: #fff;
+  background-color: #ff1816;
+  height: 3rem;
+  width: 6rem;
+}
+
+.toast {
+  position:fixed;
+  bottom:7px;
+  right:13px;
+
+}
+
+.toast-header {
+  justify-content: space-between;
+}
+
+.toast-header img {
+  width:2rem;
+}
+
+
+@media only screen and (max-width: 620px) {
+  .modal-add-new-address {
+    height: 80%;
+  }
+  .add-new-address-subumit-btn {
+    width: 70%;
+  }
+  .alert-container {
+    width: 90%;
+    height: 35%;
+  }
+  .message-alert {
+    line-height: 1.5rem;
+    height: calc(40%+20%);
+  }
+}

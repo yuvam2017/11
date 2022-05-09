@@ -1,0 +1,14 @@
+.wrapper {
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  position: absolute;
+  color: white;
+}

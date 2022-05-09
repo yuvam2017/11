@@ -1,0 +1,40 @@
+.heading {
+  color: green;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+.image_product {
+  width: 17%;
+  height: 15rem;
+  /* background-color: green; */
+  margin: 2rem;
+}
+
+.image_product img {
+  width: 100%;
+  object-fit: cover;
+}
+.shipping_to {
+    margin-left: 3rem;
+    width: 30%;
+    height: auto;
+}
+
+.confirmation_noti {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    font-weight: bolder;
+}
+
+.estimated_date {
+    font-size: 1.2rem;
+    font-weight: 800;
+    
+}
+
+@media only screen and (max-width: 640px) {
+    .image_product {
+        width: 34%;
+    }
+  }

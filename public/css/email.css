@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+  overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    color: #2f2e42;
+    background-color:#f3f3f3;
+    justify-content: center;
+    text-align: center;
+}
+.body {
+    background-color: white;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    font-size: 1.4rem;
+    width: 90vw;
+    padding: 2rem;
+}
+
+/* ############ SnackBar ################ */
+.alert {
+  padding: 20px 40px;
+  min-width: 420px;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  border-radius:  4px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alertNot {
+  background-color: #ff8d8d;
+  border-left: 4px solid #ff0202;
+}
+/* #198754 */
+.alertYes {
+  background-color: #2be28d;
+  border-left: 8px solid #198754;
+}
+
+
+.alert.showAlert {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.alert .exclamation {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.alertNot .exclamation {
+  color: #ce0000;
+}
+.alertYes .exclamation {
+  color: #166641;
+}
+
+.alert .msg {
+  padding: 0 20px;
+  font-size: 18px;
+} 
+
+.alertNot .msg {
+  color: #ce0000;
+}
+.alertYes .msg {
+  color: #156b43;
+}
+
+.alert.hide {
+  animation: hide_slide 1s ease forwards;
+}
+
+.alert.show {
+  animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+  0%{
+    transform: translateX(100%);
+  }
+  40%{
+    transform: translateX(-10%);
+  }
+  80%{
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(- 10px);
+  }
+
+}
+
+@keyframes hide_slide {
+  0%{
+    transform: translateX(-10px);
+  }
+  40%{
+    transform: translateX(0%);
+  }
+  80%{
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+.alertYes .close-btn span {
+  background: #1ead6b;
+}
+.alertNot .close-btn span {
+  background: #ff8080;
+}
+
+
+.alert .close-btn span {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 23px 18px;
+
+}
+
+.alert .close-btn > span:hover {
+  cursor: pointer;
+}
+
+.alertNot .close-btn > span:hover {
+  background: #ff6666;
+
+}
+
+.alertYes .close-btn > span:hover {
+  background: #0f5836;
+}
+
+.alert .close-btn > span {
+  font-size: 22px;
+  line-height: 40px;
+}
+.alertNot .close-btn > span {
+  color: #ce0000;
+}
+.alertYes .close-btn > span {
+  color: #40df94;
+}
+
+/* ################################### */
+
+.message-icon {
+    width:  5rem;
+    height: 5rem;
+    background-color: #1de6e6;
+    color: white;
+    font-size: 2rem;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+
+}
+.message-icon:hover {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+.verifcation-confirmation {
+    color: #369c77;
+    font-size: 1.6rem;
+    margin: 1.2rem 0;
+    
+}
+.warning {
+    color: #ee9b00;
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+.resend-email-verification {
+    white-space: nowrap;
+    width: 18rem;    
+    transition: 0.5s;
+    height: 4rem;
+    /* color: white; */
+}
+
+.resend-email-verification:hover {
+    box-shadow:  0 0 0 3px #ffbf00 ;
+    /* background-color: #e6ac00; */
+    /* color: white; */
+}
+.proceed {
+    white-space: nowrap;
+    width: 18rem;
+    transition: 0.5s;
+    height: 4rem;
+}
+.proceed:hover {
+    box-shadow: 0 0 0 3px #14b168;
+}
+
+
+.box button:focus,
+.box button:active:focus,
+.box button.active:focus,
+.box button.focus,
+.box button:active.focus,
+.box button.active.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.social-icons > a > img {
+    width :  3rem;
+    height : 3rem;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@media (max-width: 998px) {
+    html {
+      font-size: 65%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 75%;
+    }
+  }
+
+@media (max-width:648px){
+   .body {
+        width: 90vw;
+        font-size: 1.7rem;
+    }
+}
+

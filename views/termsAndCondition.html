@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11thing | Buy Trending Sports Wear Fashion</title>
+  <script src="https://kit.fontawesome.com/5f44de77a0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="shortcut icon" type="image/jpg" href="../images/favicon/android-chrome-192x192.png"/>
+  <link rel="stylesheet" href="../css/flickity.css">
+
+</head>
+
+<body>
+<div id="preloader" class="preloader">
+      <svg
+        class="pl"
+        viewBox="0 0 200 200"
+        width="200"
+        height="200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+            <stop offset="0%" stop-color="hsl(1,100%,54%)" />
+            <stop offset="100%" stop-color="hsl(5,100%,54%)" />
+          </linearGradient>
+          <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(1,100%,54%)" />
+            <stop offset="100%" stop-color="hsl(5,100%,54%)" />
+          </linearGradient>
+        </defs>
+        <circle
+          class="pl__ring"
+          cx="100"
+          cy="100"
+          r="82"
+          fill="none"
+          stroke="url(#pl-grad1)"
+          stroke-width="36"
+          stroke-dasharray="0 257 1 257"
+          stroke-dashoffset="0.01"
+          stroke-linecap="round"
+          transform="rotate(-90,100,100)"
+        />
+        <line
+          class="pl__ball"
+          stroke="url(#pl-grad2)"
+          x1="100"
+          y1="18"
+          x2="100.01"
+          y2="182"
+          stroke-width="36"
+          stroke-dasharray="1 165"
+          stroke-linecap="round"
+        />
+      </svg>
+    </div>
+  
+    <!-- ########################################## HEADER BEGINS HERE ####################################### -->
+    <div onclick="window.location='#'" class="move-to-top" id="move-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </div>
+    
+    <div class="header">
+      <div class="menu" id="menu">
+        <div class="sidebar" id="sidebar">
+          <div class="sidebar-content" id="sidebar-content">
+            <div onload="checkProfiled()" class="sidebar-content-login">
+              <div class="unprofiled">
+                <li class="welcome">You're Welcome</li>
+                <li class="unauthorised unprofiled-login-signup">
+                  <a href="/login">Login</a>
+                </li>
+              </div>
+              <div class="profiled authorised">
+                <div id="user-avtar-icon" class="user-avtar-icon">
+                  <img src="../images/account.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="hr100"></div>
+            <div class="sidebar-content-categories">
+              <p class="sidebar-content-categories-header">
+                Shop By Categories
+              </p>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                  class="fsize1_5 accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                  >
+                  Men
+                  </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                    >
+                    <div class="accordion-body">
+                      <ul>
+                        <li id="categories-heading">TopWear</li>
+                        <li><a href="/tag/tshirts">Half Sleeves T-shirts</a></li>
+                        <li><a href="/tag/tshirts">Full Sleeves T-shirts</a></li>
+                        <li><a href="/tag/tshirts">Casual Shirts</a></li>
+                        <li><a href="/tag/tshirts">Formal Shirts</a></li>
+                        <li><a href="/tag/tshirts">Sweatshirts</a></li>
+                        <li><a href="/tag/tshirts">Printed T-shirts</a></li>
+                        <li><a href="/tag/tshirts">Plain T-shirts</a></li>
+                        <li><a href="/tag/vests">Vests</a></li>
+                        <li><a href="/tag/shirts">Shirts</a></li>
+                        <li><a href="/tag/jackets">Jackets</a></li>
+                        <li><a href="/tag/hoodies">Hoodies</a></li>
+                        <li><a href="/coming">Blazers and waise Coats</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">BottomWear</li>
+                        <li><a href="/tag/shorts">Shorts</a></li>
+                        <li><a href="/tag/trousers">Casual Trousers</a></li>
+                        <li><a href="/coming">Jeans</a></li>
+                        <li><a href="/coming">Pants</a></li>
+                        <li><a href="/tag/joggers">Joggers</a></li>
+                        <li><a href="/tag/trackpants">Tack Pants</a></li>
+                        <li><a href="/coming">Boxers</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Sports & Active Wear</li>
+                        <li><a href="/tag/shoes">Sports Shoes</a></li>
+                        <li><a href="/coming">Sports Sandals</a></li>
+                        <li><a href="/tag/tshirts">Active T-shirts</a></li>
+                        <li><a href="/tag/shorts">Track Pants & Shorts</a></li>
+                        <li><a href="/tag/tracksuits">TrackSuits</a></li>
+                        <li><a href="/tag/sports">Sports Accessories</a></li>
+                        <li><a href="/coming">Swimwears</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Accessories</li>
+                        <li><a href="/coming">Wallets</a></li>
+                        <li><a href="/coming">Belts</a></li>
+                        <li><a href="/coming">Perfumes & Body Mists</a></li>
+                        <li><a href="/coming">Trimmers</a></li>
+                        <li><a href="/coming">Deodrants</a></li>
+                        <li><a href="/coming">Cap & Hats</a></li>
+                        <li><a href="/coming">Rings & Wristwear</a></li>
+                        <li><a href="/coming">Helmets</a></li>
+                        <li><a href="/coming">Smartwatches</a></li>
+                        <li><a href="/coming">Fitness Gadgets</a></li>
+                        <li><a href="/coming">Headphones</a></li>
+                        <li><a href="/coming">Speakers</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                  class="fsize1_5 accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                  >
+                  Women
+                  </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                    >
+                    <div class="accordion-body">
+                      <ul>
+                        <li id="categories-heading">Wears</li>
+                        <li><a href="/tag/jumpsuits">Jumpsuits</a></li>
+                        <li><a href="/coming">Tops</a></li>
+                        <li><a href="/coming">Jeans</a></li>
+                        <li><a href="/coming">Trousers & Capris</a></li>
+                        <li><a href="/tag/skirts">Shorts & skirts</a></li>
+                        <li><a href="/coming">Shrugs</a></li>
+                        <li><a href="/coming">Sweaters & Sweatshirts</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Footwears</li>
+                        <li><a href="/coming">Flats</a></li>
+                        <li><a href="/tag/shoes">Casual Shoes</a></li>
+                        <li><a href="/coming">Heels</a></li>
+                        <li><a href="/coming">Boots</a></li>
+                        <li><a href="/tag/shoes">Sports Shoes & Floaters</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Sports & Active Wear</li>
+                        <li><a href="/coming">Clothings</a></li>
+                        <li><a href="/coming">Footwears</a></li>
+                        <li><a href="/tag/sports">Sports & Accessories</a></li>
+                        <li><a href="/coming">Sports Equipments</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Gadgets</li>
+                        <li><a href="/coming">Smartwatches</a></li>
+                        <li><a href="/coming">Fitness Gadgets</a></li>
+                        <li><a href="/coming">Headphones</a></li>
+                        <li><a href="/coming">Speakers</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hr100"></div>
+              <ul id="myaccount-type1" class="myaccount-type1 authorised">
+                <li id="categories-heading2"><a href="#">My Account</a></li>
+                <li><a href="/myorders">My Orders</a></li>
+                <li><a href="/myfavourites">My Wishlist</a></li>
+                
+              </ul>
+              <ul id="myaccount-type2" class="myaccount-type2 authorised">
+                <li id="categories-heading2">Contact Us</li>
+                <li><a href="#">Help and Support</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+              <div class="hr100 authorised"></div>
+              <ul>
+                <li id="login-li" class="login-li unauthorised">
+                  <button onclick="toLogin()" class="btn logout">Login</button>
+                </li>
+                <li id="logout-li" class="logout-li authorised">
+                  <button id="logout-button" class="btn logout">Logout</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button id="menuBtn" class="menu-btn btn">
+        <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <a
+        href="/"
+        class="
+        d-flex
+        justify-content-center
+        align-items-center
+        man-hunt
+        flex-column
+        "
+        ><img
+        class="header-logo my-2"
+        src="../images/11thingLogofinalRounded.png"
+        alt=""
+      /></a>
+      <div class="search-bar">
+        <form class="d-flex">
+          <input
+          id="searchQueryDesktop"
+          class="search me-2"
+          type="search"
+          placeholder="Search for something ....."
+          aria-label="Search"
+          />
+          <button id="search-btn-desktop" class="btn" type="search">
+          <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="header-right-filter">
+        <button
+        onclick="window.location.replace('/myfavourites')"
+        id="favourite"
+        class="ml-2 btn favourite authorised"
+        >
+        <i class="bi bi-heart-fill"></i>
+        </button>
+        <button
+        onclick="redirectToCart()"
+        id="cart"
+        class="btn cart"
+        >
+        <i class="bi bi-bag-fill"></i>
+        <p class="authorised" id="cart-item"></p>
+        </button>
+        <button
+        onclick="redirectToCart()"
+        class="btn btn-account mycart authorised"
+        id="mycart"
+        >
+        MY CART
+        <p id="amount"></p>
+        </button>
+        <button class="authorised btn btn-account mx-2 account" id="account">
+        <i class="bi bi-person-fill"></i>
+        <div id="my-account-dropdown" class="my-account-dropdown-content">
+          <ul>
+            <li><a href="/myaccount">My Account</a></li>
+            <li><a href="/myorders">My Orders</a></li>
+            <li><a href="/myfavourites">My Wishlists</a></li>
+            
+            <li id="logout"><a href="#">Logout</a></li>
+          </ul>
+        </div>
+        </button>
+        <button
+        onclick="toLogin()"
+        id="login"
+        class="ml-2 btn login unauthorised"
+        >
+        Login
+        </button>
+      </div>
+    </div>
+    
+    <div class="header-mobile-search">
+      <div class="search-bar w-100">
+        <form class="d-flex mx-1 mobile-search-form">
+          <input
+          id="searchQueryMobile"
+          class="search me-2"
+          type="search"
+          placeholder="Search for something ....."
+          aria-label="Search"
+          />
+          <button
+          id="search-btn-mobile"
+          class="btn"
+          type="submit"
+          >
+          <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <hr class="desktop" id="hr" />
+    
+    <div class="subheader">
+      <nav class="subheader-navbar">
+        <ul>
+          <div class="navbarLeft">
+            <div class="dropdown">
+              <button id="dropdownContentToggle0" class="btn dropbtn">
+              MEN &nbsp;<img src="../images/dropdown-below.svg" alt="" />
+              </button>
+              <div
+                id="dropdownContent0"
+                class="dropdown-content dropdown-content0"
+                >
+                <div class="row">
+                  <div class="col">
+                    <p class="heading">TopWear</p>
+                    <a href="/tag/tshirts">Half Sleeves T-shirts</a>
+                    <a href="/tag/tshirts">Full Sleeves T-shirts</a>
+                    <a href="/tag/tshirts">Casual Shirts</a>
+                    <a href="/tag/tshirts">Formal Shirts</a>
+                    <a href="/tag/tshirts">Sweatshirts</a>
+                    <a href="/tag/tshirts">Printed T-shirts</a>
+                    <a href="/tag/tshirts">Plain T-shirts</a>
+                    <a href="/tag/vests">Vests</a>
+                    <a href="/tag/shirts">Shirts</a>
+                    <a href="/tag/jackets">Jackets</a>
+                    <a href="/tag/hoodies">Hoodies</a>
+                    <a href="/coming">Blazers and waise Coats</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">BottomWear</p>
+                    <a href="/tag/shorts">Shorts</a>
+                    <a href="/tag/trousers">Casual Trousers</a>
+                    <a href="/coming">Jeans</a>
+                    <a href="/coming">Pants</a>
+                    <a href="/tag/joggers">Joggers</a>
+                    <a href="/tag/trackpants">Tack Pants</a>
+                    <a href="/coming">Boxers</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">Sports & Active Wear</p>
+                    <a href="/tag/shoes">Sports Shoes</a>
+                    <a href="/coming">Sports Sandals</a>
+                    <a href="/tag/tshirts">Active T-shirts</a>
+                    <a href="/tag/shorts">Track Pants & Shorts</a>
+                    <a href="/tag/tracksuits">TrackSuits</a>
+                    <a href="/tag/sports">Sports Accessories</a>
+                    <a href="/coming">Swimwears</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">Accessories</p>
+                    <a href="/coming">Wallets</a>
+                    <a href="/coming">Belts</a>
+                    <a href="/coming">Perfumes & Body Mists</a>
+                    <a href="/coming">Trimmers</a>
+                    <a href="/coming">Deodrants</a>
+                    <a href="/coming">Cap & Hats</a>
+                    <a href="/coming">Rings & Wristwear</a>
+                    <a href="/coming">Helmets</a>
+                    <a href="/coming">Smartwatches</a>
+                    <a href="/coming">Fitness Gadgets</a>
+                    <a href="/coming">Headphones</a>
+                    <a href="/coming">Speakers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button id="dropdownContentToggle" class="btn dropbtn">
+              WOMEN &nbsp;<img src="../images/dropdown-below.svg" alt="" />
+              </button>
+              <div
+                id="dropdownContent1"
+                class="dropdown-content dropdown-content1"
+                >
+                <div class="row">
+                  <div class="col">
+                    <p class="heading">Wears</p>
+                    <a href="/tag/jumpsuits">Jumpsuits</a>
+                    <a href="/coming">Tops</a>
+                    <a href="/coming">Jeans</a>
+                    <a href="/coming">Trousers & Capris</a>
+                    <a href="/tag/skirts">Shorts & skirts</a>
+                    <a href="/coming">Shrugs</a>
+                    <a href="/coming">Sweaters & Sweatshirts</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">Footwears</p>
+                    <a href="/coming">Flats</a>
+                    <a href="/tag/shoes">Casual Shoes</a>
+                    <a href="/coming">Heels</a>
+                    <a href="/coming">Boots</a>
+                    <a href="/tag/shoes">Sports Shoes & Floaters</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">Sports & Active Wear</p>
+                    <a href="/coming">Clothings</a>
+                    <a href="/coming">Footwears</a>
+                    <a href="/tag/sports">Sports & Accessories</a>
+                    <a href="/coming">Sports Equipments</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">Gadgets</p>
+                    <a href="/coming">Smartwatches</a>
+                    <a href="/coming">Fitness Gadgets</a>
+                    <a href="/coming">Headphones</a>
+                    <a href="/coming">Speakers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </nav>
+      <nav class="right">
+      <ul></ul>
+    </nav>
+    </div>
+  
+  <div class="notice-banner" id="noticeBanner">
+    <img src="" alt="" />
+  </div>
+  <!-- ######################################### HEADER ENDS HERE #################################### -->
+  
+  <!-- ##################################### MODAL FOR LOGOUT CONFIRMATION #################################-->
+  <div class="modal-container">
+    <div class="modal-container-child">
+      <div class="modal-title text-center">Exit Confirmation</div>
+      <div class="hrdivider" id="hrdivider"></div>
+      <div class="modalBody">Do you want to logout ?</div>
+      <div class="button-bar">
+        <button id="yesmodal" class="yesmodal btn btn-warning">Yes</button>
+        <button id="cancelmodal" class="cancelmodal btn btn-secondary">
+        Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+  
+  <div class="container-fluid" id="termsAndCondition">
+    <!-- <h2>Terms and Conditions</h2>
+    <p>These terms and conditions outline the rules and regulations for the use of
+      11thing
+      &#x27;s Website, located at
+      11thing.com
+      .
+    </p>
+    <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use
+      11thing.com
+       if you do not agree to take all of the terms and conditions stated on this page.
+    </p>
+    <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all
+      Agreements: &quot;Client&quot;, &quot;You&quot; and &quot;Your&quot; refers to you, the person log on this website
+      and compliant to the Company’s terms and conditions. &quot;The Company&quot;, &quot;Ourselves&quot;,
+      &quot;We&quot;, &quot;Our&quot; and &quot;Us&quot;, refers to our Company. &quot;Party&quot;, &quot;Parties&quot;,
+      or &quot;Us&quot;, refers to both the Client and ourselves. All terms refer to the offer, acceptance and
+      consideration of payment necessary to undertake the process of our assistance to the Client in the most
+      appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s
+      stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above
+      terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as
+      interchangeable and therefore as referring to same.</p>
+    <h3>Cookies</h3>
+    <p>We employ the use of cookies. By accessing
+      11thing.com
+      , you agreed to use cookies in agreement with the
+      11thing
+      &#x27;s Privacy Policy.
+      
+    </p>
+    <p>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by
+      our website to enable the functionality of certain areas to make it easier for people visiting our website. Some
+      of our affiliate/advertising partners may also use cookies.</p>
+    <h3>License</h3>
+    <p>Unless otherwise stated,
+      11thing
+       and/or its licensors own the intellectual property rights for all material on
+      11thing.com
+      . All intellectual property rights are reserved. You may access this from
+      11thing.com
+       for your own personal use subjected to restrictions set in these terms and conditions.
+    </p>
+    <p>You must not:</p>
+    <ul>
+      <li>Republish material from
+        11thing.com
+      </li>
+      <li>Sell, rent or sub-license material from
+        11thing.com
+      </li>
+      <li>Reproduce, duplicate or copy material from
+        11thing.com
+      </li>
+      <li>Redistribute content from
+        11thing.com
+      </li>
+    </ul>
+    <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain
+      areas of the website.
+      11thing
+      does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not
+      reflect the views and opinions of
+      11thing
+      , its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views
+      and opinions. To the extent permitted by applicable laws,
+      11thing
+       shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as
+      a result of any use of and/or posting of and/or appearance of the Comments on this website.
+    </p>
+    <p>11thing
+       reserves the right to monitor all Comments and to remove any Comments which can be considered
+      inappropriate, offensive or causes breach of these Terms and Conditions.
+    </p>
+    <p>You warrant and represent that:</p>
+    <ul>
+      <li>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;
+      </li>
+      <li>The Comments do not invade any intellectual property right, including without limitation copyright, patent or
+        trademark of any third party;</li>
+      <li>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which
+        is an invasion of privacy</li>
+      <li>The Comments will not be used to solicit or promote business or custom or present commercial activities or
+        unlawful activity.</li>
+    </ul>
+    <p>You hereby grant
+      11thing
+       a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of
+      your Comments in any and all forms, formats or media.
+    </p>
+    <h3>Hyperlinking to our Content</h3>
+    <p>The following organizations may link to our Website without prior written approval:</p>
+    <ul>
+      <li>Government agencies;</li>
+      <li>Search engines;</li>
+      <li>News organizations;</li>
+      <li>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of
+        other listed businesses; and</li>
+      <li>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and
+        charity fundraising groups which may not hyperlink to our Web site.</li>
+    </ul>
+    <p>These organizations may link to our home page, to publications or to other Website information so long as the
+      link:</p>
+    <ul class="type-alpha">
+      <li>is not in any way deceptive;</li>
+      <li>does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or
+        services; and</li>
+      <li>fits within the context of the linking party’s site.</li>
+    </ul>
+    <p>We may consider and approve other link requests from the following types of organizations:</p>
+    <ul>
+      <li>commonly-known consumer and/or business information sources;</li>
+      <li>dot.com community sites;</li>
+      <li>associations or other groups representing charities;</li>
+      <li>online directory distributors;</li>
+      <li>internet portals;</li>
+      <li>accounting, law and consulting firms; and</li>
+      <li>educational institutions and trade associations.</li>
+    </ul>
+    <p>We will approve link requests from these organizations if we decide that:</p>
+    <ul class="type-alpha">
+      <li>the link would not make us look unfavorably to ourselves or to our accredited businesses;</li>
+      <li>the organization does not have any negative records with us;</li>
+      <li>the benefit to us from the visibility of the hyperlink compensates the absence of
+        11thing
+        ; and
+      </li>
+      <li>the link is in the context of general resource information.</li>
+    </ul>
+    <p>These organizations may link to our home page so long as the link:</p>
+    <ul class="type-alpha">
+      <li>is not in any way deceptive;</li>
+      <li>does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services;
+        and</li>
+      <li>fits within the context of the linking party’s site.</li>
+    </ul>
+    <p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you
+      must inform us by sending an e-mail to
+      11thing
+      . Please include your name, your organization name, contact information as well as the URL of your site, a
+      list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you
+      would like to link. Wait 2-3 weeks for a response.
+    </p>
+    <p>Approved organizations may hyperlink to our Website as follows:</p>
+    <ul>
+      <li>By use of our corporate name; or</li>
+      <li>By use of the uniform resource locator being linked to; or</li>
+      <li>By use of any other description of our Website being linked to that makes sense within the context and format
+        of content on the linking party’s site.</li>
+    </ul>
+    <p>No use of
+      11thing
+      &#x27;s logo or other artwork will be allowed for linking absent a trademark license agreement.
+    </p>
+    <h3>iFrames</h3>
+    <p>Without prior approval and written permission, you may not create frames around our Webpages that alter in any
+      way the visual presentation or appearance of our Website.</p>
+    <h3>Content Liability</h3>
+    <p>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us
+      against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted
+      as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other
+      violation of, any third party rights.</p>
+    <h3>Your Privacy</h3>
+    <p>Please read Privacy Policy</p>
+    <h3>Reservation of Rights</h3>
+    <p>We reserve the right to request that you remove all links or any particular link to our Website. You approve to
+      immediately remove all links to our Website upon request. We also reserve the right to amen these terms and
+      conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to
+      and follow these linking terms and conditions.</p>
+    <h3>Removal of links from our website</h3>
+    <p>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any
+      moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.
+    </p>
+    <p>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy;
+      nor do we promise to ensure that the website remains available or that the material on the website is kept up to
+      date.</p>
+    <h3>Disclaimer</h3>
+    <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions
+      relating to our website and the use of this website. Nothing in this disclaimer will:</p>
+    <ul>
+      <li>limit or exclude our or your liability for death or personal injury;</li>
+      <li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+      <li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+      <li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+    </ul>
+    <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer:</p>
+    <ul class="type-alpha">
+      <li>are subject to the preceding paragraph; and</li>
+      <li>govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and
+        for breach of statutory duty.</li>
+    </ul>
+    <p>As long as the website and the information and services on the website are provided free of charge, we will not
+      be liable for any loss or damage of any nature.</p> -->
+  </div>
+
+  <!-- Footer starts here -->
+  <footer class="footer">
+    <div class="rowheading">
+      <h3>11thing<sup>&copy;</sup></h3>
+    </div>
+    <div class="footer-row">
+      <div class="row">
+        <div class="col">
+          <div class="rowheading">Customer Services</div>
+          <div class="col-content">
+            <ul>
+              <li><a href="/myorders">My Orders</a></li>
+              <li><a href="/myaccount">My Account</a></li>
+              <li><a href="/payment_security">Payment Security</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="rowheading">Legals</div>
+          <div class="col-content">
+            <ul>
+              <li><a href="/returnpolicy">Refund Policy</a></li>
+              <li>
+                <a href="/termsAndCondition">Terms And Conditions</a>
+              </li>
+              <li><a href="/privacypolicy">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="rowheading">Connect With US</div>
+          <div class="col-content">
+            <ul>
+              <li class="social-icons-footer-hover-effect instagram">
+                <a href="https://www.instagram.com/shop.11thing/"
+                  ><i class="bi bi-instagram"></i>
+                  <span id="counterinstagram">Instagram</span></a
+                >
+              </li>
+              <li class="twitter social-icons-footer-hover-effect">
+                <a href="https://twitter.com/shop11thing?s=20"
+                  ><i class="bi bi-twitter"></i>
+                  <span id="counterinstagram">Twitter</span></a
+                >
+              </li>
+              <li class="telegram social-icons-footer-hover-effect">
+                <a href="https://t.me/eleventhing"
+                  ><i class="bi bi-telegram"></i>
+                  <span id="counterinstagram">Telegram</span></a
+                >
+              </li>
+              <li class="social-icons-footer-hover-effect pinterest">
+                <a href="https://pin.it/5F16HDG"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-pinterest"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"
+                    />
+                  </svg>
+                  &nbsp; <span id="counterPinterest">Pinterest</span></a
+                >
+              </li>
+              <li class="mail social-icons-footer-hover-effect">
+                <a href="mailto:shop.11thing@gmail.com"
+                  ><i class="bi bi-envelope-fill"></i>
+                  <span id="counterinstagram">Mail</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="rowheading">Contact Email</div>
+          <div class="email-subscription">
+            <input id="subscriptionEmail" type="email" placeholder="Email" />
+            <button onclick="adUserSubscription()" class="btn btn-danger">
+              subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="w-100" style="color: white" />
+    <div class="app-logo">
+      <h4>Download Our App</h4>
+      <a href="https://play.google.com/store/apps/details?id=com.eleventhing"
+        ><img src="../images/play-store.png" alt=""
+      /></a>
+    </div>
+    <hr class="w-100" style="color: white" />
+    <div class="copyright">
+      <p>Copyright 2021 - 11thing ©</p>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"></script>
+  <script src="../js/firebase.js"></script>
+  <script src="../js/terms.js"></script>
+  <script src="../js/index.js"></script>
+  
+</body>
+
+</html>

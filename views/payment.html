@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11thing| Buy Trending Sports Wear Fashion</title>
+  <script src="https://kit.fontawesome.com/5f44de77a0.js" crossorigin="anonymous"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/flickity.css">
+  <link rel="stylesheet" href="../css/slider.css">
+  <link rel="stylesheet" href="../css/payment.css">
+  <link rel="shortcut icon" type="image/jpg" href="../images/favicon/android-chrome-192x192.png" />
+
+</head>
+
+<body>
+  <!-- Modal -->
+  <div id="alert-pane" class="container-fluid w-100 alert-pane">
+    <div class="container alert-container">
+      <div class="message-alert border rounded">
+        <div>Cash On Delivery not available in your area!!</div>
+        <div>Do You wish to continue in Online Mode ?</div>
+      </div>
+      <div class="button-alert">
+        <button type="button" id="agreeChangePayment" class="btn btn-primary agree_online">Ok</button>
+        <button type="button" id="cancelChangePayment" class="btn cancel_online">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="preloader" class="preloader">
+    <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+          <stop offset="0%" stop-color="hsl(1,100%,54%)" />
+          <stop offset="100%" stop-color="hsl(5,100%,54%)" />
+        </linearGradient>
+        <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="hsl(1,100%,54%)" />
+          <stop offset="100%" stop-color="hsl(5,100%,54%)" />
+        </linearGradient>
+      </defs>
+      <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36"
+        stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round"
+        transform="rotate(-90,100,100)" />
+      <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36"
+        stroke-dasharray="1 165" stroke-linecap="round" />
+    </svg>
+  </div>
+  <!-- ########################################## HEADER BEGINS HERE ####################################### -->
+  <div onclick="window.location='#'" class="move-to-top" id="move-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </div>
+
+
+
+  <div class="header">
+    <div class="menu" id="menu">
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-content" id="sidebar-content">
+          <div onload="checkProfiled()" class="sidebar-content-login">
+            <div class="unprofiled">
+              <li class="welcome">You're Welcome</li>
+              <li class="unauthorised unprofiled-login-signup">
+                <a href="/login">Login</a>
+              </li>
+            </div>
+            <div class="profiled authorised">
+              <div id="user-avtar-icon" class="user-avtar-icon">
+                <img src="../images/account.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="hr100"></div>
+          <div class="sidebar-content-categories">
+            <p class="sidebar-content-categories-header">
+              Shop By Categories
+            </p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="fsize1_5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Men
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li id="categories-heading">TopWear</li>
+                      <li><a href="#">Half Sleeves T-shirts</a></li>
+                      <li><a href="#">Full Sleeves T-shirts</a></li>
+                      <li><a href="#">Casual Shirts</a></li>
+                      <li><a href="#">Formal Shirts</a></li>
+                      <li><a href="#">Sweatshirts</a></li>
+                      <li><a href="#">Printed T-shirts</a></li>
+                      <li><a href="#">Plain T-shirts</a></li>
+                      <li><a href="#">Vests</a></li>
+                      <li><a href="#">Shirts</a></li>
+                      <li><a href="#">Jackets</a></li>
+                      <li><a href="#">Hoodies</a></li>
+                      <li><a href="#">Blazers and waise Coats</a></li>
+
+                      <div class="hr100"></div>
+
+                      <li id="categories-heading">BottomWear</li>
+                      <li><a href="#">Shorts</a></li>
+                      <li><a href="#">Casual Trousers</a></li>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">Pants</a></li>
+                      <li><a href="#">Joggers</a></li>
+                      <li><a href="#">Tack Pants</a></li>
+                      <li><a href="#">Boxers</a></li>
+
+                      <div class="hr100"></div>
+
+                      <li id="categories-heading">Sports & Active Wear</li>
+                      <li><a href="#">Sports Shoes</a></li>
+                      <li><a href="#">Sports Scandals</a></li>
+                      <li><a href="#">Active T-shirts</a></li>
+                      <li><a href="#">Track Pants & Shorts</a></li>
+                      <li><a href="#">TrackSuits</a></li>
+                      <li><a href="#">Sports Accessories</a></li>
+                      <li><a href="#">Swimwears</a></li>
+
+                      <div class="hr100"></div>
+
+                      <li id="categories-heading">Accessories</li>
+                      <li><a href="#">Wallets</a></li>
+                      <li><a href="#">Belts</a></li>
+                      <li><a href="#">Perfumes & Body Mists</a></li>
+                      <li><a href="#">Trimmers</a></li>
+                      <li><a href="#">Deodrants</a></li>
+                      <li><a href="#">Cap & Hats</a></li>
+                      <li><a href="#">Rings & Wristwear</a></li>
+                      <li><a href="#">Helmets</a></li>
+                      <li><a href="#">Smartwatches</a></li>
+                      <li><a href="#">Fitness Gadgets</a></li>
+                      <li><a href="#">Headphones</a></li>
+                      <li><a href="#">Speakers</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="fsize1_5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Women
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul>
+                      <li id="categories-heading">Wears</li>
+                      <li><a href="#">Jumpsuits</a></li>
+                      <li><a href="#">Tops</a></li>
+                      <li><a href="#">Jeans</a></li>
+                      <li><a href="#">Trousers & Capris</a></li>
+                      <li><a href="#">Shorts & skirts</a></li>
+                      <li><a href="#">Shrugs</a></li>
+                      <li><a href="#">Sweaters & Sweatshirts</a></li>
+
+                      <div class="hr100"></div>
+
+                      <li id="categories-heading">Footwears</li>
+                      <li><a href="#">Flats</a></li>
+                      <li><a href="#">Casual Shoes</a></li>
+                      <li><a href="#">Heels</a></li>
+                      <li><a href="#">Boots</a></li>
+                      <li><a href="#">Sports Shoes & Floaters</a></li>
+
+                      <div class="hr100"></div>
+
+                      <li id="categories-heading">Sports & Active Wear</li>
+                      <li><a href="#">Clothings</a></li>
+                      <li><a href="#">Footwears</a></li>
+                      <li><a href="#">Sports & Accessories</a></li>
+                      <li><a href="#">Sports Equipments</a></li>
+
+                      <div class="hr100"></div>
+
+                      <li id="categories-heading">Gadgets</li>
+                      <li><a href="#">Smartwatches</a></li>
+                      <li><a href="#">Fitness Gadgets</a></li>
+                      <li><a href="#">Headphones</a></li>
+                      <li><a href="#">Speakers</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hr100"></div>
+            <ul id="myaccount-type1" class="myaccount-type1 authorised">
+              <li id="categories-heading2"><a href="#">My Account</a></li>
+              <li><a href="/myorders">My Orders</a></li>
+              <li><a href="/myfavourites">My Wishlist</a></li>
+
+            </ul>
+            <ul id="myaccount-type2" class="myaccount-type2 authorised">
+              <li id="categories-heading2">Contact Us</li>
+              <li><a href="#">Help and Support</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+
+            <div class="hr100 authorised"></div>
+            <ul>
+              <li id="login-li" class="login-li unauthorised">
+                <button onclick="toLogin()" class="btn logout">Login</button>
+              </li>
+              <li id="logout-li" class="logout-li authorised">
+                <button id="logout-button" class="btn logout">Logout</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <button id="menuBtn" class="menu-btn btn">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+
+    <a href="/" class="
+          d-flex
+          justify-content-center
+          align-items-center
+          man-hunt
+          flex-column
+        "><img class="header-logo my-2" src="../images/11thingLogofinalRounded.png" alt="" /></a>
+
+    <div class="search-bar">
+      <form class="d-flex">
+        <input id="searchQueryDesktop" class="search me-2" type="search" placeholder="Search for something ....."
+          aria-label="Search" />
+        <button id="search-btn-desktop" class="btn" type="search">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+    </div>
+
+    <div class="header-right-filter">
+      <button onclick="window.location.replace('/myfavourites')" id="favourite" class="ml-2 btn favourite authorised">
+        <i class="bi bi-heart-fill"></i>
+      </button>
+
+      <button onclick="redirectToCart()" id="cart" class="btn cart">
+        <i class="bi bi-bag-fill"></i>
+        <p class="authorised" id="cart-item"></p>
+      </button>
+
+      <button onclick="redirectToCart()" class="btn btn-account mycart authorised" id="mycart">
+        MY CART
+        <p id="amount"></p>
+      </button>
+
+      <button class="authorised btn btn-account mx-2 account" id="account">
+        <i class="bi bi-person-fill"></i>
+        <div id="my-account-dropdown" class="my-account-dropdown-content">
+          <ul>
+            <li><a href="/myaccount">My Account</a></li>
+            <li><a href="/myorders">My Orders</a></li>
+            <li><a href="/myfavourites">My Wishlists</a></li>
+
+            <li id="logout"><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </button>
+
+      <button onclick="toLogin()" id="login" class="ml-2 btn login unauthorised">
+        Login
+      </button>
+    </div>
+  </div>
+
+  <div class="header-mobile-search">
+    <div class="search-bar w-100">
+      <form class="d-flex mx-1 mobile-search-form">
+        <input id="searchQueryMobile" class="search me-2" type="search" placeholder="Search for something ....."
+          aria-label="Search" />
+        <button id="search-btn-mobile" class="btn" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <hr id="hr" />
+
+  <div class="subheader">
+    <nav class="subheader-navbar">
+      <ul>
+        <div class="navbarLeft">
+          <div class="dropdown">
+            <button id="dropdownContentToggle0" class="btn dropbtn">
+              MEN &nbsp;<img src="../images/dropdown-below.svg" alt="" />
+            </button>
+
+            <div id="dropdownContent0" class="dropdown-content dropdown-content0">
+              <div class="row">
+                <div class="col">
+                  <p class="heading">TopWear</p>
+                  <a href="#">Half Sleeves T-shirts</a>
+                  <a href="#">Full Sleeves T-shirts</a>
+                  <a href="#">Casual Shirts</a>
+                  <a href="#">Formal Shirts</a>
+                  <a href="#">Sweatshirts</a>
+                  <a href="#">Printed T-shirts</a>
+                  <a href="#">Plain T-shirts</a>
+                  <a href="#">Vests</a>
+                  <a href="#">Shirts</a>
+                  <a href="#">Jackets</a>
+                  <a href="#">Hoodies</a>
+                  <a href="#">Blazers and waise Coats</a>
+                </div>
+                <div class="col">
+                  <p class="heading">BottomWear</p>
+
+                  <a href="#">Shorts</a>
+                  <a href="#">Casual Trousers</a>
+                  <a href="#">Jeans</a>
+                  <a href="#">Pants</a>
+                  <a href="#">Joggers</a>
+                  <a href="#">Tack Pants</a>
+                  <a href="#">Boxers</a>
+                </div>
+                <div class="col">
+                  <p class="heading">Sports & Active Wear</p>
+
+                  <a href="#">Sports Shoes</a>
+                  <a href="#">Sports Scandals</a>
+                  <a href="#">Active T-shirts</a>
+                  <a href="#">Track Pants & Shorts</a>
+                  <a href="#">TrackSuits</a>
+                  <a href="#">Sports Accessories</a>
+                  <a href="#">Swimwears</a>
+                </div>
+
+                <div class="col">
+                  <p class="heading">Accessories</p>
+
+                  <a href="#">Wallets</a>
+                  <a href="#">Belts</a>
+                  <a href="#">Perfumes & Body Mists</a>
+                  <a href="#">Trimmers</a>
+                  <a href="#">Deodrants</a>
+                  <a href="#">Cap & Hats</a>
+                  <a href="#">Rings & Wristwear</a>
+                  <a href="#">Helmets</a>
+                  <a href="#">Smartwatches</a>
+                  <a href="#">Fitness Gadgets</a>
+                  <a href="#">Headphones</a>
+                  <a href="#">Speakers</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button id="dropdownContentToggle" class="btn dropbtn">
+              WOMEN &nbsp;<img src="../images/dropdown-below.svg" alt="" />
+            </button>
+
+            <div id="dropdownContent1" class="dropdown-content dropdown-content1">
+              <div class="row">
+                <div class="col">
+                  <p class="heading">Wears</p>
+                  <a href="#">Jumpsuits</a>
+                  <a href="#">Tops</a>
+                  <a href="#">Jeans</a>
+                  <a href="#">Trousers & Capris</a>
+                  <a href="#">Shorts & skirts</a>
+                  <a href="#">Shrugs</a>
+                  <a href="#">Sweaters & Sweatshirts</a>
+                </div>
+
+                <div class="col">
+                  <p class="heading">Footwears</p>
+                  <a href="#">Flats</a>
+                  <a href="#">Casual Shoes</a>
+                  <a href="#">Heels</a>
+                  <a href="#">Boots</a>
+                  <a href="#">Sports Shoes & Floaters</a>
+                </div>
+
+                <div class="col">
+                  <p class="heading">Sports & Active Wear</p>
+                  <a href="#">Clothings</a>
+                  <a href="#">Footwears</a>
+                  <a href="#">Sports & Accessories</a>
+                  <a href="#">Sports Equipments</a>
+                </div>
+
+                <div class="col">
+                  <p class="heading">Gadgets</p>
+                  <a href="#">Smartwatches</a>
+                  <a href="#">Fitness Gadgets</a>
+                  <a href="#">Headphones</a>
+                  <a href="#">Speakers</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <nav class="right">
+      <ul></ul>
+    </nav>
+  </div>
+
+  <div class="notice-banner" id="noticeBanner">
+    <img src="" alt="" />
+  </div>
+
+  <!-- ######################################### HEADER ENDS HERE #################################### -->
+
+  <!-- ##################################### MODAL FOR LOGOUT CONFIRMATION #################################-->
+  <div class="modal-container">
+    <div class="modal-container-child">
+      <div class="modal-title text-center">Exit Confirmation</div>
+      <div class="hrdivider" id="hrdivider"></div>
+      <div class="modalBody">Do you want to logout ?</div>
+      <div class="button-bar">
+        <button id="yesmodal" class="yesmodal btn btn-warning">Yes</button>
+        <button id="cancelmodal" class="cancelmodal btn btn-secondary">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+  <!-- ############ Real Code ############ -->
+
+  <div class="toast" id="modalToast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="../images/11thingLogofinalRounded.png" class="rounded mr-2" alt="...">
+      <strong class="mr-auto">11thing.com</strong>
+      <button type="button" class="btn ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div id="toast-body" class="toast-body">
+      Invalid Coupon
+    </div>
+  </div>
+
+
+  <div id="modalCharges" class="modal-charges container-fluid w-100">
+    <div id="modalChargesChild" class="container border rounded shadow modal-charges-child">
+      <div class="modal-header">
+        <h3>Total Charges</h3>
+      </div>
+      <div id="chargesModalBody" class="modal-body">
+        <div class="d-flex justify-content-center align-items-center flex-column container-left-modal-body">
+          <ul class="list-none">
+            <li>Item Price : </li>
+            <li>Quantity : </li>
+            <li>Delivery Charges : </li>
+            <li>Total Charges : </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column container-right-modal-body">
+          <ul class="list-none">
+            <li id="item-price"></li>
+            <li id="item-quantity"></li>
+            <li id="item-delivery-charges"></li>
+            <li id="item-total-charges"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="coupon" id="coupon-code">
+        <input type="text" id="coupon-Code" class="coupon-code" name="couponCode"
+          placeholder="Gift Card or Discount Code">
+        <button id="apply-coupon" onclick="applyCoupon()" class="btn btn-coupon">Apply</button>
+      </div>
+      <hr>
+      <div class="modal-buttons">
+        <button onclick="closeModal()" class="btn btn-secondary"> Close</button>
+        <button onclick="proceedModal()" class="btn btn-danger"> Proceed </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="main-container container-fluid">
+    <div class="container-fluid border rounded payment-container mb-4">
+      <div id="orderSummary" class="order-summary">
+
+      </div>
+      <div class="payment-method" id="methodPayment">
+        <h4 class="my-4">Choose Payment Method</h5>
+          <div class="d-flex justify-content-center align-items-center payment-banner">
+            <h4 class="my-4">Payment Partner</h4>
+            <img src="../images/razorpay.jpg">
+          </div>
+
+          <hr>
+
+
+          <div class="row">
+            <div class="form-check mx-2">
+              <input id="onlineModeRadio" class="form-check-input" value="online" type="radio"
+                name="paymentMethodFlexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label-payment" for="flexRadioDefault2">
+                Online Mode
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-check mx-2">
+              <input id="codModeRadio" class="form-check-input" value="cod" type="radio"
+                name="paymentMethodFlexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label-payment" for="flexRadioDefault1">
+                Cash On Delivery
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <br>
+            <span><strong> Note :</strong> Get &#8377; 40 off on Delivery Charges by paying using Online method</span>
+          </div>
+
+      </div>
+      <div class="delivery-address">
+        <h4 class="my-4">Select Delivery Address</h4>
+        <hr>
+        <div id="addressContainer" class="address-container container">
+
+          <!-- <div id="address1" class="address container">
+            <div class="container address-catelogs">
+              <p id="userName1" class="h4 userName">Sahil</p>
+              <hr>
+              <p id="addr1" class="addr1">D1/2 Civil Line Colony</p>
+              <p class="town" id="town1">Ballia</p>
+              <p class="state" id="state1">Uttar Pradesh</p>
+              <p class="pincode" id="pincode1">277001</p>
+              <p class="phonenumber" id="phonenumber1">9450524879</p>
+              <hr>
+            </div>
+            <div class="buttons-group">
+              <div class="row">
+                <div class="col">
+                  <button id="selectAddress"
+                    onclick="selectAddress(this.parentElement.parentElement.parentElement.parentElement.id)"
+                    class="w-100 btn btn-delivery-selection btn-warning">Deliver to this address</button>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col">
+                  <button onclick="editAddress(this.parentElement.parentElement.parentElement.parentElement.id)" class="btn btn-grey w-100">Edit</button>
+                </div>
+                <div class="col"><button
+                    onclick="deletetheAddress(this.parentElement.parentElement.parentElement.parentElement.id)"
+                    class="btn btn-grey w-100">Delete</button></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="address2" class="address container">
+            <div class="container address-catelogs">
+              <p id="userName2" class="h4 userName">Sahil</p>
+              <hr>
+              <p id="addr2" class="addr2">D1/2 Civil Line Colony</p>
+              <p class="town" id="town2">Ballia</p>
+              <p class="state" id="state2">Uttar Pradesh</p>
+              <p class="pincode" id="pincode2">277001</p>
+              <p class="phonenumber" id="phonenumber2">7270034045</p>
+              <hr>
+            </div>
+            <div class="buttons-group">
+              <div class="row">
+                <div class="col">
+                  <button id="selectAddress"
+                    onclick="selectAddress(this.parentElement.parentElement.parentElement.parentElement.id)"
+                    class="w-100 btn btn-delivery-selection btn-warning">Deliver to this address</button>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col">
+                  <button
+                    onclick="editAddress(this.parentElement.parentElement.parentElement.parentElement.id)"
+                    class="btn btn-grey w-100">Edit</button>
+                </div>
+                <div class="col"><button
+                    onclick="deletetheAddress(this.parentElement.parentElement.parentElement.parentElement.id)"
+                    class="btn btn-grey w-100">Delete</button></div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+
+      <div class="error_pincode_status" id="error_pincode_status"></div>
+
+      <div class="add-new-address mb-3">
+        <h4 class="my-4">New Address</h4>
+        <hr>
+        <div class="row">
+          <div class="col">Add New Address</div>
+          <div class="col"><button id="addNewAddress" class="btn btn-dark">Add New Address</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-new-address container-fluid w-100" id="modalNewAddress">
+    <div class="close-modal-add-new-address">
+      <button onclick="hideModalNewAddress()" class="btn"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="container modal-add-new-address border rounded shadow">
+      <h4 id="headingModal" class="mt-1 mb-2">Add New Address</h4>
+      <hr>
+      <div class="form-container container mt-1">
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control add-new-address-name" id="floatingFullName" placeholder="Full Name">
+          <label for="floatingFullName">Full Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control add-new-address-mobile-number" id="floatingMobileNumber"
+            placeholder="Mobile Number">
+          <label for="floatingMobileNumber">Mobile Number</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control add-new-address-pincode" id="floatingPinCode" placeholder="Pincode">
+          <label for="floatingPinCode">Pincode</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control add-new-address-flat-house" id="floatingHouse"
+            placeholder="Flat, House, Building, Number">
+          <label for="floatingHouse">Flat, House, Building, Number</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control add-new-address-flat-colony" id="floatingColony"
+            placeholder="Area,Colony,Street,Village">
+          <label for="floatingColony">Area,Colony,Street,Village</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control add-new-address-flat-landmark" id="floatingLandmark"
+            placeholder="Landmark (Optional)">
+          <label for="floatingLandmark">Landmark (Optional)</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control add-new-address-Town" id="floatingTown" placeholder="Town">
+          <label for="floatingTown">Town / City</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <select class="form-select add-new-address-state" id="floatingState"
+            aria-label="Floating label select example">
+            <option value="state" selected>State</option>
+            <option value="1">Andman & Nicobar Island</option>
+            <option value="2">Andhra Pradesh</option>
+            <option value="3">Arunachal Pradesh</option>
+            <option value="4">Assam</option>
+            <option value="5">Bihar</option>
+            <option value="6">Chandigarh</option>
+            <option value="7">Chattisgarh</option>
+            <option value="8">Dadra & Nagar Haveli</option>
+            <option value="9">Daman & Diu</option>
+            <option value="10">Delhi</option>
+            <option value="11">Goa</option>
+            <option value="12">Gujarat</option>
+            <option value="13">Haryana</option>
+            <option value="14">Himachal Pradesh</option>
+            <option value="15">Jammu & Kashmir</option>
+            <option value="16">Jharkhand</option>
+            <option value="17">Karnataka</option>
+            <option value="18">Kerela</option>
+            <option value="19">Lakshadweep</option>
+            <option value="20">Madhya Pradesh</option>
+            <option value="21">Maharashtra</option>
+            <option value="22">Manipur</option>
+            <option value="23">Meghalaya</option>
+            <option value="24">Mizoram</option>
+            <option value="25">Odisha</option>
+            <option value="26">Puducherry</option>
+            <option value="27">Punjab</option>
+            <option value="28">Rajasthan</option>
+            <option value="29">Sikkim</option>
+            <option value="30">Tamil Nadu</option>
+            <option value="31">Telangana</option>
+            <option value="32">Tripura</option>
+            <option value="33">Uttar Pradesh</option>
+            <option value="34">Uttrakhand</option>
+            <option value="35">West Bengal</option>
+          </select>
+          <label for="floatingSelect">Select the State</label>
+        </div>
+
+        <div class="text-center button-submit-modal-add-new-address w-100">
+          <button onclick="saveNewAddress()" id="floatingSubmit"
+            class=" add-new-address-subumit-btn btn btn-warning">Save this Address</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ############################### -->
+
+  <!-- Footer starts here -->
+  <footer class="footer">
+
+    <div class="rowheading">
+      <h3>11thing<sup>&copy;</sup></h3>
+    </div>
+
+    <div class="footer-row">
+      <div class="row">
+
+        <div class="col">
+          <div class="rowheading">Customer Services</div>
+          <div class="col-content">
+            <ul>
+              <li><a href="#">Cancel Order</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="payment_security.html">Payment Security</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="rowheading">Legals</div>
+          <div class="col-content">
+            <ul>
+              <li><a href="returnpolicy.html">Refund Policy</a></li>
+              <li><a href="termsAndCondition.html">Terms And Conditions</a></li>
+              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="rowheading">Connect With US</div>
+          <div class="col-content">
+            <ul>
+              <li class="social-icons-footer-hover-effect facebook"><a href="#"><i class="bi bi-facebook"></i><span
+                    id="counterfacebook">Facebook</span></a></li>
+              <li class="social-icons-footer-hover-effect instagram"><a href="#"><i class="bi bi-instagram"></i>
+                  <span id="counterinstagram">Instagram</span></a></li>
+              <li class="twitter social-icons-footer-hover-effect"><a href="#"><i class="bi bi-twitter"></i> <span
+                    id="counterinstagram">Twitter</span></a></li>
+              <li class="whatsapp social-icons-footer-hover-effect"><a href="#"><i class="bi bi-whatsapp"></i>
+                  <span id="counterinstagram">Whatsapp</span></a></li>
+              <li class="mail social-icons-footer-hover-effect"><a href="#"><i class="bi bi-envelope-fill"></i>
+                  <span id="counterinstagram">Mail</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="rowheading">Contact Email</div>
+          <div class="email-subscription">
+            <input type="email" placeholder="Email">
+            <button onclick="adUserSubscription('sahil1560@gmail.com')" class="btn btn-success">subscribe</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="w-100" style="color: white;">
+
+    <div class="app-logo">
+      <h4>Download Our App</h4>
+      <a href="#"><img src="../images/play-store.png" alt=""></a>
+    </div>
+
+    <hr class="w-100" style="color: white;">
+
+    <div class="copyright">
+      <p>Copyright 2021 - 11thing ©</p>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <script src="../js/firebase.js"></script>
+  <script src="../js/flickity.pkgd.min.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/handle_payment.js"></script>
+  <script src="../js/payment.js"></script>
+</body>
+
+</html>

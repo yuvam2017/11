@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="images/favicon/android-chrome-192x192.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="p:domain_verify" content="73372856cf2465df90c7f62661ac410b" />
+    <meta
+      name="facebook-domain-verification"
+      content="8748jvpthhpg00klxjgxp390haugu0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="11Thing | Fashion at Hands" />
+    <meta property="og:url" content="https://www.11thing.com/" />
+    <meta property="og:description" content="Buy Trending Fashions on hand " />
+    <meta
+      property="og:image"
+      content="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/11thingLogofinalRounded.png?alt=media&token=699b1b2e-a292-4d24-b178-b06bd9f10099"
+    />
+    <title>11thing| Buy Trending Sports Wear Fashion</title>
+    <script
+      src="https://kit.fontawesome.com/5f44de77a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/flickity.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+  </head>
+  <body>
+    <div id="preloader" class="preloader">
+      <svg
+        class="pl"
+        viewBox="0 0 200 200"
+        width="200"
+        height="200"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+            <stop offset="0%" stop-color="hsl(1,100%,54%)" />
+            <stop offset="100%" stop-color="hsl(5,100%,54%)" />
+          </linearGradient>
+          <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="hsl(1,100%,54%)" />
+            <stop offset="100%" stop-color="hsl(5,100%,54%)" />
+          </linearGradient>
+        </defs>
+        <circle
+          class="pl__ring"
+          cx="100"
+          cy="100"
+          r="82"
+          fill="none"
+          stroke="url(#pl-grad1)"
+          stroke-width="36"
+          stroke-dasharray="0 257 1 257"
+          stroke-dashoffset="0.01"
+          stroke-linecap="round"
+          transform="rotate(-90,100,100)"
+        />
+        <line
+          class="pl__ball"
+          stroke="url(#pl-grad2)"
+          x1="100"
+          y1="18"
+          x2="100.01"
+          y2="182"
+          stroke-width="36"
+          stroke-dasharray="1 165"
+          stroke-linecap="round"
+        />
+      </svg>
+    </div>
+    <!-- ########################################## HEADER BEGINS HERE ####################################### -->
+    <div onclick="window.location='#'" class="move-to-top" id="move-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </div>
+
+    <div class="header">
+      <div class="menu" id="menu">
+        <div class="sidebar" id="sidebar">
+          <div class="sidebar-content" id="sidebar-content">
+            <div onload="checkProfiled()" class="sidebar-content-login">
+              <div class="unprofiled">
+                <li class="welcome">You're Welcome</li>
+                <li class="unauthorised unprofiled-login-signup">
+                  <a href="/login">Login</a>
+                </li>
+              </div>
+              <div class="profiled authorised">
+                <div id="user-avtar-icon" class="user-avtar-icon">
+                  <img src="images/account.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="hr100"></div>
+            <div class="sidebar-content-categories">
+              <p class="sidebar-content-categories-header">
+                Shop By Categories
+              </p>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="fsize1_5 accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      Men
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li id="categories-heading">TopWear</li>
+                        <li>
+                          <a href="/search/products?tag=tshirts"
+                            >Half Sleeves T-shirts</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=tshirts"
+                            >Full Sleeves T-shirts</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=tshirts"
+                            >Casual Shirts</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=tshirts"
+                            >Formal Shirts</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=tshirts">Sweatshirts</a>
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=tshirts"
+                            >Printed T-shirts</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=tshirts"
+                            >Plain T-shirts</a
+                          >
+                        </li>
+                        <li><a href="/search/products?tag=vests">Vests</a></li>
+                        <li>
+                          <a href="/search/products?tag=shirts">Shirts</a>
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=jackets">Jackets</a>
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=hoodies">Hoodies</a>
+                        </li>
+                        <li><a href="/coming">Blazers and waise Coats</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">BottomWear</li>
+                        <li>
+                          <a href="/search/products?tag=shorts">Shorts</a>
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=trousers"
+                            >Casual Trousers</a
+                          >
+                        </li>
+                        <li><a href="/coming">Jeans</a></li>
+                        <li><a href="/coming">Pants</a></li>
+                        <li>
+                          <a href="/search/products?tag=joggers">Joggers</a>
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=trackpants"
+                            >Tack Pants</a
+                          >
+                        </li>
+                        <li><a href="/coming">Boxers</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Sports & Active Wear</li>
+                        <li>
+                          <a href="/search/products?tag=shoes">Sports Shoes</a>
+                        </li>
+                        <li><a href="/coming">Sports Sandals</a></li>
+                        <li>
+                          <a href="/search/products?tag=tshirts"
+                            >Active T-shirts</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=shorts"
+                            >Track Pants & Shorts</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=tracksuits"
+                            >TrackSuits</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/search/products?tag=sports"
+                            >Sports Accessories</a
+                          >
+                        </li>
+                        <li><a href="/coming">Swimwears</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Accessories</li>
+                        <li><a href="/coming">Wallets</a></li>
+                        <li><a href="/coming">Belts</a></li>
+                        <li><a href="/coming">Perfumes & Body Mists</a></li>
+                        <li><a href="/coming">Trimmers</a></li>
+                        <li><a href="/coming">Deodrants</a></li>
+                        <li><a href="/coming">Cap & Hats</a></li>
+                        <li><a href="/coming">Rings & Wristwear</a></li>
+                        <li><a href="/coming">Helmets</a></li>
+                        <li><a href="/coming">Smartwatches</a></li>
+                        <li><a href="/coming">Fitness Gadgets</a></li>
+                        <li><a href="/coming">Headphones</a></li>
+                        <li><a href="/coming">Speakers</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                      class="fsize1_5 accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      Women
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li id="categories-heading">Wears</li>
+                        <li>
+                          <a href="/search/products?tag=jumpsuits">Jumpsuits</a>
+                        </li>
+                        <li><a href="/coming">Tops</a></li>
+                        <li><a href="/coming">Jeans</a></li>
+                        <li><a href="/coming">Trousers & Capris</a></li>
+                        <li>
+                          <a href="/search/products?tag=skirts"
+                            >Shorts & skirts</a
+                          >
+                        </li>
+                        <li><a href="/coming">Shrugs</a></li>
+                        <li><a href="/coming">Sweaters & Sweatshirts</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Footwears</li>
+                        <li><a href="/coming">Flats</a></li>
+                        <li>
+                          <a href="/search/products?tag=shoes">Casual Shoes</a>
+                        </li>
+                        <li><a href="/coming">Heels</a></li>
+                        <li><a href="/coming">Boots</a></li>
+                        <li>
+                          <a href="/search/products?tag=shoes"
+                            >Sports Shoes & Floaters</a
+                          >
+                        </li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Sports & Active Wear</li>
+                        <li><a href="/coming">Clothings</a></li>
+                        <li><a href="/coming">Footwears</a></li>
+                        <li>
+                          <a href="/search/products?tag=sports"
+                            >Sports & Accessories</a
+                          >
+                        </li>
+                        <li><a href="/coming">Sports Equipments</a></li>
+                        <div class="hr100"></div>
+                        <li id="categories-heading">Gadgets</li>
+                        <li><a href="/coming">Smartwatches</a></li>
+                        <li><a href="/coming">Fitness Gadgets</a></li>
+                        <li><a href="/coming">Headphones</a></li>
+                        <li><a href="/coming">Speakers</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hr100"></div>
+              <ul id="myaccount-type1" class="myaccount-type1 authorised">
+                <li id="categories-heading2"><a href="#">My Account</a></li>
+                <li><a href="/myorders">My Orders</a></li>
+                <li><a href="/myfavourites">My Wishlist</a></li>
+              </ul>
+              <ul id="myaccount-type2" class="myaccount-type2 authorised">
+                <li id="categories-heading2">Contact Us</li>
+                <li><a href="#">Help and Support</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+              <div class="hr100 authorised"></div>
+              <ul>
+                <li id="login-li" class="login-li unauthorised">
+                  <button onclick="toLogin()" class="btn logout">Login</button>
+                </li>
+                <li id="logout-li" class="logout-li authorised">
+                  <button id="logout-button" class="btn logout">Logout</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button id="menuBtn" class="menu-btn btn">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <a
+        href="/"
+        class="d-flex justify-content-center align-items-center man-hunt flex-column"
+        ><img
+          class="header-logo my-2"
+          src="images/11thingLogofinalRounded.png"
+          alt=""
+      /></a>
+      <div class="search-bar">
+        <form class="d-flex">
+          <input
+            id="searchQueryDesktop"
+            class="search me-2"
+            type="search"
+            placeholder="Search for something ....."
+            aria-label="Search"
+          />
+          <button id="search-btn-desktop" class="btn" type="search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="header-right-filter">
+        <button
+          onclick="window.location.replace('/myfavourites')"
+          id="favourite"
+          class="ml-2 btn favourite authorised"
+        >
+          <i class="bi bi-heart-fill"></i>
+        </button>
+        <button onclick="redirectToCart()" id="cart" class="btn cart">
+          <i class="bi bi-bag-fill"></i>
+          <p class="authorised" id="cart-item"></p>
+        </button>
+        <button
+          onclick="redirectToCart()"
+          class="btn btn-account mycart authorised"
+          id="mycart"
+        >
+          MY CART
+          <p id="amount"></p>
+        </button>
+        <button class="authorised btn btn-account mx-2 account" id="account">
+          <i class="bi bi-person-fill"></i>
+          <div id="my-account-dropdown" class="my-account-dropdown-content">
+            <ul>
+              <li><a href="/myaccount">My Account</a></li>
+              <li><a href="/myorders">My Orders</a></li>
+              <li><a href="/myfavourites">My Wishlists</a></li>
+
+              <li id="logout"><a href="#">Logout</a></li>
+            </ul>
+          </div>
+        </button>
+        <button
+          onclick="toLogin()"
+          id="login"
+          class="ml-2 btn login unauthorised"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+
+    <div class="header-mobile-search">
+      <div class="search-bar w-100">
+        <form class="d-flex mx-1 mobile-search-form">
+          <input
+            id="searchQueryMobile"
+            class="search me-2"
+            type="search"
+            placeholder="Search for something ....."
+            aria-label="Search"
+          />
+          <button id="search-btn-mobile" class="btn" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <hr class="desktop" id="hr" />
+
+    <div class="subheader">
+      <nav class="subheader-navbar">
+        <ul>
+          <div class="navbarLeft">
+            <div class="dropdown">
+              <button id="dropdownContentToggle0" class="btn dropbtn">
+                MEN &nbsp;<img src="images/dropdown-below.svg" alt="" />
+              </button>
+              <div
+                id="dropdownContent0"
+                class="dropdown-content dropdown-content0"
+              >
+                <div class="row">
+                  <div class="col">
+                    <p class="heading">TopWear</p>
+                    <a href="/search/products?tag=tshirts"
+                      >Half Sleeves T-shirts</a
+                    >
+                    <a href="/search/products?tag=tshirts"
+                      >Full Sleeves T-shirts</a
+                    >
+                    <a href="/search/products?tag=tshirts">Casual Shirts</a>
+                    <a href="/search/products?tag=tshirts">Formal Shirts</a>
+                    <a href="/search/products?tag=tshirts">Sweatshirts</a>
+                    <a href="/search/products?tag=tshirts">Printed T-shirts</a>
+                    <a href="/search/products?tag=tshirts">Plain T-shirts</a>
+                    <a href="/search/products?tag=vests">Vests</a>
+                    <a href="/search/products?tag=shirts">Shirts</a>
+                    <a href="/search/products?tag=jackets">Jackets</a>
+                    <a href="/search/products?tag=hoodies">Hoodies</a>
+                    <a href="/coming">Blazers and waise Coats</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">BottomWear</p>
+                    <a href="/search/products?tag=shorts">Shorts</a>
+                    <a href="/search/products?tag=trousers">Casual Trousers</a>
+                    <a href="/coming">Jeans</a>
+                    <a href="/coming">Pants</a>
+                    <a href="/search/products?tag=joggers">Joggers</a>
+                    <a href="/search/products?tag=trackpants">Tack Pants</a>
+                    <a href="/coming">Boxers</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">Sports & Active Wear</p>
+                    <a href="/search/products?tag=shoes">Sports Shoes</a>
+                    <a href="/coming">Sports Sandals</a>
+                    <a href="/search/products?tag=tshirts">Active T-shirts</a>
+                    <a href="/search/products?tag=shorts"
+                      >Track Pants & Shorts</a
+                    >
+                    <a href="/search/products?tag=tracksuits">TrackSuits</a>
+                    <a href="/search/products?tag=sports">Sports Accessories</a>
+                    <a href="/coming">Swimwears</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">Accessories</p>
+                    <a href="/coming">Wallets</a>
+                    <a href="/coming">Belts</a>
+                    <a href="/coming">Perfumes & Body Mists</a>
+                    <a href="/coming">Trimmers</a>
+                    <a href="/coming">Deodrants</a>
+                    <a href="/coming">Cap & Hats</a>
+                    <a href="/coming">Rings & Wristwear</a>
+                    <a href="/coming">Helmets</a>
+                    <a href="/coming">Smartwatches</a>
+                    <a href="/coming">Fitness Gadgets</a>
+                    <a href="/coming">Headphones</a>
+                    <a href="/coming">Speakers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button id="dropdownContentToggle" class="btn dropbtn">
+                WOMEN &nbsp;<img src="images/dropdown-below.svg" alt="" />
+              </button>
+              <div
+                id="dropdownContent1"
+                class="dropdown-content dropdown-content1"
+              >
+                <div class="row">
+                  <div class="col">
+                    <p class="heading">Wears</p>
+                    <a href="/search/products?tag=jumpsuits">Jumpsuits</a>
+                    <a href="/coming">Tops</a>
+                    <a href="/coming">Jeans</a>
+                    <a href="/coming">Trousers & Capris</a>
+                    <a href="/search/products?tag=skirts">Shorts & skirts</a>
+                    <a href="/coming">Shrugs</a>
+                    <a href="/coming">Sweaters & Sweatshirts</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">Footwears</p>
+                    <a href="/coming">Flats</a>
+                    <a href="/search/products?tag=shoes">Casual Shoes</a>
+                    <a href="/coming">Heels</a>
+                    <a href="/coming">Boots</a>
+                    <a href="/search/products?tag=shoes"
+                      >Sports Shoes & Floaters</a
+                    >
+                  </div>
+                  <div class="col">
+                    <p class="heading">Sports & Active Wear</p>
+                    <a href="/coming">Clothings</a>
+                    <a href="/coming">Footwears</a>
+                    <a href="/search/products?tag=sports"
+                      >Sports & Accessories</a
+                    >
+                    <a href="/coming">Sports Equipments</a>
+                  </div>
+                  <div class="col">
+                    <p class="heading">Gadgets</p>
+                    <a href="/coming">Smartwatches</a>
+                    <a href="/coming">Fitness Gadgets</a>
+                    <a href="/coming">Headphones</a>
+                    <a href="/coming">Speakers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </nav>
+      <nav class="right">
+        <ul></ul>
+      </nav>
+    </div>
+
+    <div class="notice-banner" id="noticeBanner">
+      <img src="" alt="" />
+    </div>
+    <!-- ######################################### HEADER ENDS HERE #################################### -->
+
+    <!-- ##################################### MODAL FOR LOGOUT CONFIRMATION #################################-->
+    <div class="modal-container">
+      <div class="modal-container-child">
+        <div class="modal-title text-center">Exit Confirmation</div>
+        <div class="hrdivider" id="hrdivider"></div>
+        <div class="modalBody">Do you want to logout ?</div>
+        <div class="button-bar">
+          <button id="yesmodal" class="yesmodal btn btn-warning">Yes</button>
+          <button id="cancelmodal" class="cancelmodal btn btn-secondary">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+
+    <hr />
+
+    <!-- Categories starts here -->
+    <!-- <div class="grid-view">
+      <h3>CATEGORIES</h3>
+      <div id="containerGallery" class="container-gallery">
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery0"
+            src="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/UI%2FCategories%2FTshirt.png?alt=media&token=a10eabcc-ffbd-4057-92f1-10862052f856"
+            alt=""
+            width="600"
+            height="400"
+          />
+          <div class="desc">T-Shirts</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery1"
+            src="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/UI%2FCategories%2FTanktop.png?alt=media&token=400ef2d5-c3c4-4684-b67a-66c159bb9d37"
+            alt=""
+            width="600"
+            height="400"
+          />
+          <div class="desc">Tank Tops</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery2"
+            src="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/UI%2FCategories%2FCombo.png?alt=media&token=2147aebe-bed2-4db8-b6e2-b76e7405ec6a"
+            alt=""
+            width="600"
+            height="400"
+          />
+          <div class="desc">Combo</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery3"
+            src="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/UI%2FCategories%2FShorts.png?alt=media&token=ca2788fa-7220-4e85-a9a9-8aaa41469782"
+            alt=""
+            width="600"
+            height="400"
+          />
+          <div class="desc">Shorts</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery4"
+cccc
+            alt=""
+            width="600"
+            height="400"
+          />
+          <div class="desc">InnerWear</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery4"
+            src="images/hoodies.jpg"
+            alt=""
+            width="600"
+            height="400"
+          />
+          <div class="desc">Hoodies</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery4"
+            src="images/jackets.jpg"
+            alt=""
+            width="600"
+            height="400"
+          />
+          <div class="desc">Jackets</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery4"
+            src="images/product-1.jpg"
+            alt=""
+            width="600"
+            height="400"
+          />
+          <div class="desc">Cheaters</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery4"
+            src="images/raincoats.jpg"
+            alt="raincoats"
+            width="600"
+            height="400"
+          />
+          <div class="desc">Raincoats</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery4"
+            src="images/vests.jpeg"
+            alt="vests"
+            width="600"
+            height="400"
+          />
+          <div class="desc">Vests</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery7"
+            src="images/sportsAccessories.jpg"
+            alt="Accessories"
+            width="600"
+            height="400"
+          />
+          <div class="desc">Accessories</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery8"
+            src="images/shoes.jpg"
+            alt="Shoes"
+            width="600"
+            height="400"
+          />
+          <div class="desc">Shoes</div>
+        </div>
+        <div onclick="catchCategs(this)" class="gallery">
+          <img
+            class="shadow"
+            id="gallery11"
+            src="images/Joggers.png"
+            alt="Joggers"
+            width="600"
+            height="400"
+          />
+          <div class="desc">Joggers</div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Categories Slider -->
+
+    <div class="slider mb-5">
+      <div class="heading">
+        
+        <h3>CATEGORIES</h3>
+      </div>
+      <div
+        class="carousel"
+        data-flickity='{ "groupCells": 2 ,"wrapAround": true ,"autoPlay" : 4500}'
+      >
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/UI%2FCategories%2FTshirt.png?alt=media&token=a10eabcc-ffbd-4057-92f1-10862052f856"
+                alt="Trending Product Image"
+              />
+              <div class="desc">T-Shirts</div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/UI%2FCategories%2FTanktop.png?alt=media&token=400ef2d5-c3c4-4684-b67a-66c159bb9d37"
+                alt="Trending Product Image"
+              />
+              <div class="desc">Tank Tops</div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/UI%2FCategories%2FCombo.png?alt=media&token=2147aebe-bed2-4db8-b6e2-b76e7405ec6a"
+                alt="Trending Product Image"
+              />
+              <div class="desc">Combo</div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/UI%2FCategories%2FShorts.png?alt=media&token=ca2788fa-7220-4e85-a9a9-8aaa41469782"
+                alt="Trending Product Image"
+              />
+              <div class="desc">Shorts</div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/fashion-e-commerce-8a71f.appspot.com/o/UI%2FCategories%2Finnerwear.png?alt=media&token=4653d069-33d8-41b3-bc89-9b085aaf7499"
+                alt="Trending Product Image"
+              />
+              <div class="desc">InnerWear</div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img src="images/hoodies.jpg" alt="Trending Product Image" />
+              <div class="desc">Hoodies</div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img src="images/jackets.jpg" alt="Trending Product Image" />
+              <div class="desc">Jackets</div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img src="images/product-1.jpg" alt="Trending Product Image" />
+              <div class="desc">Cheaters</div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img src="images/raincoats.jpg" alt="Trending Product Image" />
+              <div class="desc">Raincoats</div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img src="images/vests.jpeg" alt="Trending Product Image" />
+              <div class="desc">Vests</div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                src="images/sportsAccessories.jpg"
+                alt="Trending Product Image"
+              />
+              <div class="desc">Accessories</div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img src="images/shoes.jpg" alt="Trending Product Image" />
+              <div class="desc">Shoes</div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          onclick="catchCategs(this)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img src="images/Joggers.png" alt="Trending Product Image" />
+              <div class="desc">Joggers</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Categories ends here -->
+    <hr />
+
+    <div class="slider mb-5">
+      <div class="heading">
+        <h3>trending Now</h3>
+      </div>
+      <div
+        class="carousel"
+        data-flickity='{ "groupCells": 2 ,"wrapAround": true ,"autoPlay" : 4500}'
+      >
+        <div
+          onclick="trendingReplace(this.id)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                id="cell-img-products-1"
+                src=""
+                alt="Trending Product Image"
+              />
+              <div class="figcaption">
+                <figcaption
+                  id="cell-img-products-price-1"
+                  class="real"
+                ></figcaption>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="trendingReplace(this.id)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                id="cell-img-products-2"
+                src=""
+                alt="Trending Product Image"
+              />
+              <div class="figcaption">
+                <figcaption
+                  id="cell-img-products-price-2"
+                  class="real"
+                ></figcaption>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="trendingReplace(this.id)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                id="cell-img-products-3"
+                src=""
+                alt="Trending Product Image"
+              />
+              <div class="figcaption">
+                <figcaption
+                  id="cell-img-products-price-3"
+                  class="real"
+                ></figcaption>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="trendingReplace(this.id)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                id="cell-img-products-4"
+                src=""
+                alt="Trending Product Image"
+              />
+              <div class="figcaption">
+                <figcaption
+                  id="cell-img-products-price-4"
+                  class="real"
+                ></figcaption>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="trendingReplace(this.id)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                id="cell-img-products-5"
+                src=""
+                alt="Trending Product Image"
+              />
+              <div class="figcaption">
+                <figcaption
+                  id="cell-img-products-price-5"
+                  class="real"
+                ></figcaption>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          onclick="trendingReplace(this.id)"
+          class="trending-products carousel-cell"
+        >
+          <div class="cell-img">
+            <a href="#">
+              <img
+                id="cell-img-products-6"
+                src=""
+                alt="Trending Product Image"
+              />
+              <div class="figcaption">
+                <figcaption
+                  id="cell-img-products-price-6"
+                  class="real"
+                ></figcaption>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div id="headerCarousel" class="header-caousel">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div id="innerCarousel" class="carousel-inner w-100">
+          <!--  <div class="carousel-item w-100 active">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ethics-7dc11.appspot.com/o/mainPage%2FheaderCarousel%2Fgreen_cotsyn_new.png?alt=media&token=6b0ec7d6-a5bf-452c-b551-3082bb4ba6a6" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item w-100">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ethics-7dc11.appspot.com/o/mainPage%2FheaderCarousel%2Fbeta_version_new.png?alt=media&token=e324ec86-bd5f-478d-9981-758422daafcc" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item w-100">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ethics-7dc11.appspot.com/o/mainPage%2FheaderCarousel%2Fnew_adding_new.png?alt=media&token=ec4c1615-5cda-45c7-b71c-55bcb04adba9" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item w-100">
+                <img src="https://firebasestorage.googleapis.com/v0/b/ethics-7dc11.appspot.com/o/mainPage%2FheaderCarousel%2FNew%20LAUNCH%20Discount%2015%25.png?alt=media&token=d5ccf0ae-df81-4173-8849-a6d4168caee0" class="d-block w-100" alt="...">
+              </div> -->
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <hr />
+
+
+    <!-- banner starts here -->
+    <div class="banner container-fluid w-100">
+      <div class="banner_heading">Featured By</div>
+      <hr />
+      <div class="container banner_slides_parent">
+        <div class="banner_slides">
+          <a href="/search/products?tag=maxzone">
+            <img src="images/banner/maxzone.png" alt="" />
+          </a>
+        </div>
+        <div class="banner_slides">
+          <a href="/search/products?tag=menology">
+            <img src="images/banner/menology.png" alt="" />
+          </a>
+        </div>
+        <div class="banner_slides">
+          <a href="/search/products?tag=pluspoint">
+            <img src="images/banner/pluspoint.png" alt="" />
+          </a>
+        </div>
+        <div class="banner_slides">
+          <a href="/search/products?tag=thanabat">
+            <img src="images/banner/thanabat.png" alt="ThanaBat" />
+          </a>
+        </div>
+        <div class="banner_slides">
+          <a href="/search/products?tag=technosport">
+            <img src="images/banner/technosport.png" alt="Technosport Logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- banner end here -->
+    <hr />
+
+    <div class="notice-banner" id="noticeBanner">
+      <img src="images/elevate_blue_sky_middle_resized.png" alt="" />
+    </div>
+
+    <div class="confetti-popup" id="confetti-popup">
+      <div id="confetti-close" class="confetti-close">
+        <i class="bi bi-x"></i>
+      </div>
+      <p>
+        Grab The Lighting Deal on the Occassion of
+        <span id="eventName">New Year</span>
+      </p>
+      <div id="evenTagline">Happy New Year 2022</div>
+      <div class="eventCoupon">
+        <div class="eventCouponCode" id="eventCouponCode">NEWYEAR22</div>
+        <div
+          class="copy-button-confetti"
+          id="copyButtonConfetti"
+          onclick="copyCouponCode(this.parentElement.children[0])"
+        >
+          <i class="bi bi-clipboard"></i>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="my-canvas"></canvas>
+
+    <footer class="footer">
+      <div class="rowheading">
+        <h3>11thing<sup>&copy;</sup></h3>
+      </div>
+      <div class="footer-row">
+        <div class="row">
+          <div class="col">
+            <div class="rowheading">Customer Services</div>
+            <div class="col-content">
+              <ul>
+                <li><a href="/myorders">My Orders</a></li>
+                <li><a href="/myaccount">My Account</a></li>
+                <li><a href="/payment_security">Payment Security</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rowheading">Legals</div>
+            <div class="col-content">
+              <ul>
+                <li><a href="/returnpolicy">Refund Policy</a></li>
+                <li>
+                  <a href="/termsAndCondition">Terms And Conditions</a>
+                </li>
+                <li><a href="/privacypolicy">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rowheading">Connect With US</div>
+            <div class="col-content">
+              <ul>
+                <li class="social-icons-footer-hover-effect instagram">
+                  <a href="https://www.instagram.com/shop.11thing/"
+                    ><i class="bi bi-instagram"></i>
+                    <span id="counterinstagram">Instagram</span></a
+                  >
+                </li>
+                <li class="twitter social-icons-footer-hover-effect">
+                  <a href="https://twitter.com/shop11thing?s=20"
+                    ><i class="bi bi-twitter"></i>
+                    <span id="counterinstagram">Twitter</span></a
+                  >
+                </li>
+                <li class="telegram social-icons-footer-hover-effect">
+                  <a href="https://t.me/eleventhing"
+                    ><i class="bi bi-telegram"></i>
+                    <span id="counterinstagram">Telegram</span></a
+                  >
+                </li>
+                <li class="social-icons-footer-hover-effect pinterest">
+                  <a href="https://pin.it/5F16HDG"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-pinterest"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"
+                      />
+                    </svg>
+                    &nbsp; <span id="counterPinterest">Pinterest</span></a
+                  >
+                </li>
+                <li class="mail social-icons-footer-hover-effect">
+                  <a href="mailto:shop.11thing@gmail.com"
+                    ><i class="bi bi-envelope-fill"></i>
+                    <span id="counterinstagram">Mail</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="rowheading">Contact Email</div>
+            <div class="email-subscription">
+              <input id="subscriptionEmail" type="email" placeholder="Email" />
+              <button onclick="adUserSubscription()" class="btn btn-danger">
+                subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="w-100" style="color: white" />
+      <div class="app-logo">
+        <h4>Download Our App</h4>
+        <a href="https://play.google.com/store/apps/details?id=com.eleventhing"
+          ><img src="images/play-store.png" alt=""
+        /></a>
+      </div>
+      <hr class="w-100" style="color: white" />
+      <div class="copyright">
+        <p>Copyright 2021 - 11thing ©</p>
+      </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+                  https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "467385864988759");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=467385864988759&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script src="js/confetti.min.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

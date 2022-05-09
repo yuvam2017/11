@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Montserrat:wght@300;400;500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300&display=swap");
+/* font-family: 'Montserrat', sans-serif; */
+
+/* font-family: 'Poppins', sans-serif; */
+
+/* font-family: 'Kiwi Maru', serif; */
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+/* use the variable as var(--blue) .etc */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-code {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* flex-direction: column; */
+}
+
+.left-filter-checkbox {
+  width: 20%;
+  height: 25rem;
+}
+
+.button-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 3rem;
+
+}
+
+.left-filter-checkbox h4 {
+  margin-bottom: 2rem;
+}
+
+.left-filter-checkbox h6 {
+  text-decoration: underline;
+  margin-bottom: 1.2rem;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.disnone {
+  display: none;
+}
+
+.right-filter-checkbox .order-history .products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 2rem;
+}
+
+.right-filter-checkbox .order-history a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-filter-checkbox .order-history .products .image img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.products {
+  flex-wrap: wrap;
+  position: relative ;
+}
+
+.products .first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.products .first .image {
+  margin-right: 2rem;
+}
+
+.first .details .title {
+  max-width: 18rem;
+  /* background-color: cyan; */
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.first .details .description {
+  max-width: 18rem;
+  /* background-color: cyan; */
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #808080;
+}
+
+.crdlabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.dot-red {
+  margin-right: 0.8rem;
+  background-color: var(--bs-danger);
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+}
+
+.dot-green {
+  margin-right: 0.8rem;
+  background-color: var(--bs-green);
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+}
+
+.dot-yellow {
+  margin-right: 0.8rem;
+  background-color: var(--bs-warning);
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+}
+
+.dot-black {
+  margin-right: 0.8rem;
+  background-color: #000;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+}
+
+.dot-blue {
+  margin-right: 0.8rem;
+  background-color: var(--bs-blue);
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+}
+
+
+.toasts {
+  position: fixed;
+  right: 0.75rem;
+  bottom : 0.9rem;
+  z-index: 2;
+}
+
+.toast {
+  font-size: 1.25rem;
+  opacity: 1;
+  width: 100%;
+}
+
+/* ############ Modal View Details ############### */
+.cross {
+  position: absolute;
+  top:9%;
+  right: 7.8%;
+}
+.cross > i {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.modal-view-details  {
+  background-color:rgba(0, 0, 0, 0.24) ;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  display: none;
+}
+.inside-container {
+  background-color: white;
+  width: 75vw;
+  height: auto;
+}
+.order-details ul{
+  list-style-type: none;
+}
+/* ############################################### */
+
+@media (max-width: 998px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/*For mobile phones*/
+@media only screen and (max-width: 620px) {
+  .main-code {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+  }
+  #leftFilterCheckbox {
+    width: 100%;  
+  }
+  #rightFilterCheckbox {
+    width: 100%;
+  }
+  .button-container {
+    flex-direction: column;
+  }
+  .button-container button {
+    width: 13rem;
+    margin-top: 1rem !important;
+  }
+}
