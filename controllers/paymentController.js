@@ -6,7 +6,7 @@ const Razorpay = require("razorpay");
   // key_secret:process.env.RZR_KEY
 
 const razorPayInstance= new Razorpay({
-  key_id:"rzp_live_iJdPgCOlowRTfJ",
+  key_id:"rzp_test_nynGfvAwV9xBcn",
   key_secret:"gzAd4EqjEOLq6QeRK2ZLuatE"
   // key_id:process.env.RZR_API,
 });
