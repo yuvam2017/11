@@ -361,7 +361,7 @@ function createPayment(addrid, methpay, elem) {
   const user = firebase.auth().currentUser;
 
   const options = {
-    key: "rzp_live_iJdPgCOlowRTfJ", // Enter the Key ID generated from the Dashboard
+    key: "rzp_test_nynGfvAwV9xBcn", // Enter the Key ID generated from the Dashboard
     amount: parseInt(localStorage.getItem("totalCharges")) * 100,
     currency: "INR",
     name: "11Thing.com",
